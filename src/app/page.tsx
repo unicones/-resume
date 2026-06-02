@@ -874,7 +874,7 @@ const mockExperiences: { [key: string]: any[] } = {
 const mockSkills: { [key: string]: any[] } = {
   th: [
     { category: "IT Infrastructure (หลัก)", name: "Fortigate / Sophos / Zyxel", proficiency: "Advanced" },
-    { category: "IT Infrastructure (หลัก)", name: "Switch L3,L2 Cisco / Aruba / HP Switch", proficiency: "Advanced" },
+    { category: "IT Infrastructure (หลัก)", name: "Switch L3,L2 Cisco / Aruba / HP", proficiency: "Advanced" },
     { category: "IT Infrastructure (หลัก)", name: "TP-Link Omada", proficiency: "Advanced" },
     { category: "IT Infrastructure (หลัก)", name: "Active Directory / GPO", proficiency: "Advanced" },
     { category: "IT Infrastructure (หลัก)", name: "Microsoft 365 SharePoint", proficiency: "Advanced" },
@@ -890,7 +890,7 @@ const mockSkills: { [key: string]: any[] } = {
   ],
   en: [
     { category: "IT Infrastructure (Primary)", name: "Fortigate / Sophos / Zyxel", proficiency: "Advanced" },
-    { category: "IT Infrastructure (Primary)", name: "Switch L3,L2 Cisco / Aruba / HP Switch", proficiency: "Advanced" },
+    { category: "IT Infrastructure (Primary)", name: "Switch L3,L2 Cisco / Aruba / HP", proficiency: "Advanced" },
     { category: "IT Infrastructure (Primary)", name: "TP-Link Omada", proficiency: "Advanced" },
     { category: "IT Infrastructure (Primary)", name: "Active Directory / GPO", proficiency: "Advanced" },
     { category: "IT Infrastructure (Primary)", name: "Microsoft 365 SharePoint", proficiency: "Advanced" },
@@ -1337,7 +1337,7 @@ export default function Home() {
   const circularSkills = useMemo(() => {
     return [
       { name: "Fortigate / Sophos / Zyxel", short: "FW", percent: 90, color: "stroke-[#dc2626]" },
-      { name: "Switch L3,L2 Cisco / Aruba / HP Switch", short: "SW", percent: 90, color: "stroke-[#2563eb]" },
+      { name: "Switch L3,L2 Cisco / Aruba / HP", short: "SW", percent: 90, color: "stroke-[#2563eb]" },
       { name: "TP-Link Omada", short: "Omada", percent: 90, color: "stroke-[#0284c7]" },
       { name: "Active Directory / GPO", short: "AD", percent: 90, color: "stroke-[#2563eb]" },
       { name: "Microsoft 365 SharePoint", short: "SP", percent: 90, color: "stroke-[#0284c7]" },
@@ -1747,7 +1747,7 @@ export default function Home() {
                               : s.name.includes("SharePoint") 
                                 ? "SharePoint" 
                                 : s.name.includes("Switch") 
-                                  ? "Network Switch" 
+                                  ? "Switch L3,L2" 
                                   : s.name.includes("Firewall") || s.name.includes("Fortigate") 
                                     ? "Firewall" 
                                     : s.name.includes("VMware") 

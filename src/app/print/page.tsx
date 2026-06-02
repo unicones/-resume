@@ -290,7 +290,7 @@ const mockExperiences = {
 const mockSkills: { [key: string]: any[] } = {
   th: [
     { category: "IT Infrastructure (หลัก)", name: "Fortigate / Sophos / Zyxel", proficiency: "Advanced" },
-    { category: "IT Infrastructure (หลัก)", name: "Switch L3,L2 Cisco / Aruba / HP Switch", proficiency: "Advanced" },
+    { category: "IT Infrastructure (หลัก)", name: "Switch L3,L2 Cisco / Aruba / HP", proficiency: "Advanced" },
     { category: "IT Infrastructure (หลัก)", name: "TP-Link Omada", proficiency: "Advanced" },
     { category: "IT Infrastructure (หลัก)", name: "Active Directory / GPO", proficiency: "Advanced" },
     { category: "IT Infrastructure (หลัก)", name: "Microsoft 365 SharePoint", proficiency: "Advanced" },
@@ -306,7 +306,7 @@ const mockSkills: { [key: string]: any[] } = {
   ],
   en: [
     { category: "IT Infrastructure (Primary)", name: "Fortigate / Sophos / Zyxel", proficiency: "Advanced" },
-    { category: "IT Infrastructure (Primary)", name: "Switch L3,L2 Cisco / Aruba / HP Switch", proficiency: "Advanced" },
+    { category: "IT Infrastructure (Primary)", name: "Switch L3,L2 Cisco / Aruba / HP", proficiency: "Advanced" },
     { category: "IT Infrastructure (Primary)", name: "TP-Link Omada", proficiency: "Advanced" },
     { category: "IT Infrastructure (Primary)", name: "Active Directory / GPO", proficiency: "Advanced" },
     { category: "IT Infrastructure (Primary)", name: "Microsoft 365 SharePoint", proficiency: "Advanced" },
