@@ -1527,7 +1527,7 @@ export default function Home() {
                         <h4 className="text-lg font-extrabold text-slate-800 font-heading uppercase group-hover:text-blue-600 transition-colors">
                           {featuredProject.title}
                         </h4>
-                        <p className="text-xs text-slate-650 leading-relaxed font-medium line-clamp-3">
+                        <p className="text-[13px] text-slate-650 leading-relaxed font-medium line-clamp-3">
                           {featuredProject.description}
                         </p>
                       </div>
@@ -1535,14 +1535,14 @@ export default function Home() {
                       <div className="space-y-4">
                         <div className="flex flex-wrap gap-1.5">
                           {featuredProject.tags?.map((tag: string, idx: number) => (
-                            <span key={idx} className="text-[9px] font-bold text-slate-600 bg-slate-50 border border-slate-200 px-2.5 py-0.5 rounded-md">
+                            <span key={idx} className="text-[10px] font-bold text-slate-600 bg-slate-50 border border-slate-200 px-2.5 py-0.5 rounded-md">
                               {tag}
                             </span>
                           ))}
                         </div>
                         <button
                           onClick={() => setActiveTab("projects")}
-                          className="inline-flex items-center gap-1 text-[11px] font-black text-blue-600 uppercase tracking-widest hover:text-blue-800 transition-colors cursor-pointer"
+                          className="inline-flex items-center gap-1 text-[12px] font-black text-blue-600 uppercase tracking-widest hover:text-blue-800 transition-colors cursor-pointer"
                         >
                           <span>{uiTranslations[language].exploreDetails}</span>
                           <ExternalLink className="w-3.5 h-3.5" />
@@ -1656,7 +1656,7 @@ export default function Home() {
                             </div>
                           </div>
 
-                          <span className="text-[11px] font-bold text-slate-500 group-hover:text-slate-800 transition-colors mt-1.5 text-center leading-tight">
+                          <span className="text-[12px] font-bold text-slate-500 group-hover:text-slate-800 transition-colors mt-1.5 text-center leading-tight">
                             {s.name === "Active Directory" ? "Active Directory" : s.name.split(" ")[0]}
                           </span>
                         </div>
