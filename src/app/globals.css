@@ -162,3 +162,24 @@ h1, h2, h3, h4, h5, h6, .font-heading {
   box-shadow: 0 4px 12px rgba(15, 23, 42, 0.08) !important;
   transform: translateY(-1px) !important;
 }
+
+/* Premium Color Scheme Overrides */
+.text-slate-800,
+.text-slate-900,
+h1, h2, h3, h4, h5, h6 {
+  color: #0f172a !important; /* Slate 900 for headings/dark text */
+}
+
+.text-slate-650,
+.text-slate-600,
+.text-slate-700 {
+  color: #334155 !important; /* Slate 700 for body texts */
+}
+
+.bg-white {
+  background-color: #ffffff !important; /* Pure white for cards */
+}
+
+.bg-slate-50 {
+  background-color: #f8fafc !important; /* Slate 50 off-white for backgrounds */
+}
