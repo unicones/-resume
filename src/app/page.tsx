@@ -1509,7 +1509,7 @@ export default function Home() {
                   <span className="text-sm font-bold text-blue-600 font-heading block">
                     {currentProfile.title}
                   </span>
-                  <p className="text-slate-600 text-base leading-relaxed font-medium text-justify whitespace-pre-line">
+                  <p className="text-slate-600 text-base leading-relaxed font-medium text-left whitespace-pre-line">
                     {currentProfile.bio}
                   </p>
                 </div>

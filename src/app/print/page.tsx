@@ -624,7 +624,7 @@ function PrintPageContent() {
 
           {/* Profile Bio / Summary */}
           <div className="mt-4">
-            <p className="text-slate-700 text-justify text-[10px] leading-relaxed font-medium whitespace-pre-line">
+            <p className="text-slate-700 text-left text-[10px] leading-relaxed font-medium whitespace-pre-line">
               {profile.bio}
             </p>
           </div>
