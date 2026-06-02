@@ -697,10 +697,23 @@ function PrintPageContent() {
                     <span>{experiences[0].role}</span>
                     <span className="text-slate-500 font-medium">{experiences[0].location}</span>
                   </div>
-                  <ul className="list-disc list-outside pl-4 text-[9.5px] text-slate-700 space-y-0.5 leading-relaxed font-medium">
-                    {experiences[0].responsibilities.map((r: string, rIdx: number) => (
-                      <li key={rIdx}>{r}</li>
-                    ))}
+                  <ul className="space-y-0.5 leading-relaxed font-medium text-[9.5px] text-slate-700">
+                    {experiences[0].responsibilities.map((r: string, rIdx: number) => {
+                      const isHeader = /^\s*\d+\.\s+/.test(r);
+                      const cleanedText = r.replace(/^\s*[•\-\*]\s*/, '').trim();
+                      if (isHeader) {
+                        return (
+                          <li key={rIdx} className="list-none font-bold text-slate-900 mt-1.5 first:mt-0 text-[9.5px]">
+                            {cleanedText}
+                          </li>
+                        );
+                      }
+                      return (
+                        <li key={rIdx} className="list-disc list-outside pl-0.5 ml-3.5">
+                          {cleanedText}
+                        </li>
+                      );
+                    })}
                   </ul>
                   {experiences[0].accomplishments && experiences[0].accomplishments.length > 0 && (
                     <div className="mt-1 bg-slate-50/70 border border-slate-200/80 p-2 rounded-xl">
@@ -730,10 +743,23 @@ function PrintPageContent() {
                     <span>{experiences[1].role}</span>
                     <span className="text-slate-500 font-medium">{experiences[1].location}</span>
                   </div>
-                  <ul className="list-disc list-outside pl-4 text-[9.5px] text-slate-700 space-y-0.5 leading-relaxed font-medium">
-                    {experiences[1].responsibilities.map((r: string, rIdx: number) => (
-                      <li key={rIdx}>{r}</li>
-                    ))}
+                  <ul className="space-y-0.5 leading-relaxed font-medium text-[9.5px] text-slate-700">
+                    {experiences[1].responsibilities.map((r: string, rIdx: number) => {
+                      const isHeader = /^\s*\d+\.\s+/.test(r);
+                      const cleanedText = r.replace(/^\s*[•\-\*]\s*/, '').trim();
+                      if (isHeader) {
+                        return (
+                          <li key={rIdx} className="list-none font-bold text-slate-900 mt-1.5 first:mt-0 text-[9.5px]">
+                            {cleanedText}
+                          </li>
+                        );
+                      }
+                      return (
+                        <li key={rIdx} className="list-disc list-outside pl-0.5 ml-3.5">
+                          {cleanedText}
+                        </li>
+                      );
+                    })}
                   </ul>
                 </div>
               )}
@@ -766,10 +792,23 @@ function PrintPageContent() {
                   <span>{exp.role}</span>
                   <span className="text-slate-500 font-medium">{exp.location}</span>
                 </div>
-                <ul className="list-disc list-outside pl-4 text-[9.5px] text-slate-700 space-y-0.5 leading-relaxed font-medium">
-                  {exp.responsibilities.map((r: string, rIdx: number) => (
-                    <li key={rIdx}>{r}</li>
-                  ))}
+                <ul className="space-y-0.5 leading-relaxed font-medium text-[9.5px] text-slate-700">
+                  {exp.responsibilities.map((r: string, rIdx: number) => {
+                    const isHeader = /^\s*\d+\.\s+/.test(r);
+                    const cleanedText = r.replace(/^\s*[•\-\*]\s*/, '').trim();
+                    if (isHeader) {
+                      return (
+                        <li key={rIdx} className="list-none font-bold text-slate-900 mt-1.5 first:mt-0 text-[9.5px]">
+                          {cleanedText}
+                        </li>
+                      );
+                    }
+                    return (
+                      <li key={rIdx} className="list-disc list-outside pl-0.5 ml-3.5">
+                        {cleanedText}
+                      </li>
+                    );
+                  })}
                 </ul>
               </div>
             ))}

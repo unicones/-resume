@@ -1926,23 +1926,33 @@ export default function Home() {
                             {exp.start_date} - {exp.end_date}
                           </span>
                         </div>
-
+ 
                         {/* Responsibilities list */}
                         {exp.responsibilities && exp.responsibilities.length > 0 && (
                           <div className="space-y-1.5 text-[16px] text-slate-600 leading-relaxed font-medium">
                             <h5 className="text-[13px] font-black text-slate-500 uppercase tracking-widest border-b border-slate-200 pb-1">
                               {uiTranslations[language].responsibilities}
                             </h5>
-                            <ul className="list-disc list-outside pl-4 space-y-1">
-                              {exp.responsibilities.map((desc: string, dIdx: number) => (
-                                <li key={dIdx}>{desc}</li>
-                              ))}
+                            <ul className="space-y-1 pl-1">
+                              {exp.responsibilities.map((desc: string, dIdx: number) => {
+                                const isHeader = /^\s*\d+\.\s+/.test(desc);
+                                const cleanedText = desc.replace(/^\s*[•\-\*]\s*/, '').trim();
+                                if (isHeader) {
+                                  return (
+                                    <li key={dIdx} className="list-none font-bold text-slate-800 mt-4 first:mt-0 text-[16px]">
+                                      {cleanedText}
+                                    </li>
+                                  );
+                                }
+                                return (
+                                  <li key={dIdx} className="list-disc list-outside pl-1 ml-4 text-[16px]">
+                                    {cleanedText}
+                                  </li>
+                                );
+                              })}
                             </ul>
                           </div>
                         )}
-
-
-
                       </div>
 
                     </div>
