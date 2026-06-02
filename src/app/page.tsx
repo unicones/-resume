@@ -1362,7 +1362,7 @@ export default function Home() {
   }
 
   return (
-    <div className="min-h-screen bg-slate-50 text-slate-800 flex bg-grid-pattern relative overflow-hidden">
+    <div className="min-h-screen bg-slate-50 text-slate-800 flex relative overflow-hidden">
       
       {/* Floating Language Switcher */}
       <div className="fixed top-4 right-4 z-40 flex gap-1 p-1 bg-white/80 backdrop-blur-md border border-slate-200/80 rounded-full shadow-lg">
@@ -1377,7 +1377,7 @@ export default function Home() {
             className={`px-3 py-1.5 rounded-full text-xs font-black transition-all cursor-pointer ${
               language === lang.code
                 ? "bg-gradient-to-r from-blue-600 to-indigo-600 text-white shadow-sm"
-                : "text-slate-650 hover:text-slate-900 hover:bg-slate-100"
+                : "text-slate-600 hover:text-slate-900 hover:bg-slate-100"
             }`}
           >
             {lang.label}
@@ -1385,11 +1385,7 @@ export default function Home() {
         ))}
       </div>
 
-      {/* Background Subtle Gradients */}
-      <div className="absolute top-0 left-0 w-full h-full pointer-events-none z-0">
-        <div className="absolute top-[-10%] left-[-10%] w-[50%] h-[50%] bg-blue-50/50 rounded-full filter blur-[120px]" />
-        <div className="absolute bottom-[-10%] right-[-10%] w-[50%] h-[50%] bg-indigo-50/40 rounded-full filter blur-[120px]" />
-      </div>
+      
 
       <div className="flex-1 max-w-[1400px] mx-auto flex flex-col md:flex-row relative z-10 p-4 md:p-6 gap-6 md:h-screen md:overflow-hidden min-h-screen">
         
@@ -1455,7 +1451,7 @@ export default function Home() {
               <h3 className="font-black text-xl tracking-[0.1em] text-slate-800 font-heading uppercase">
                 {currentProfile.name ? currentProfile.name.split(" ")[0] : "PATIWAT"}
               </h3>
-              <p className="text-[14px] text-slate-550 font-semibold mt-1.5 font-heading">
+              <p className="text-[14px] text-slate-600 font-semibold mt-1.5 font-heading">
                 {currentProfile.title || "IT Manager & Infrastructure"}
               </p>
             </div>
@@ -1513,7 +1509,7 @@ export default function Home() {
                   <span className="text-sm font-bold text-blue-600 font-heading block">
                     {currentProfile.title}
                   </span>
-                  <p className="text-slate-650 text-base leading-relaxed font-medium text-justify whitespace-pre-line">
+                  <p className="text-slate-600 text-base leading-relaxed font-medium text-justify whitespace-pre-line">
                     {currentProfile.bio}
                   </p>
                 </div>
@@ -1581,7 +1577,7 @@ export default function Home() {
                         <h4 className="text-lg font-extrabold text-slate-800 font-heading uppercase group-hover:text-blue-600 transition-colors">
                           {featuredProject.title}
                         </h4>
-                        <p className="text-[13px] text-slate-650 leading-relaxed font-medium line-clamp-3">
+                        <p className="text-[13px] text-slate-600 leading-relaxed font-medium line-clamp-3">
                           {featuredProject.description}
                         </p>
                       </div>
@@ -1757,7 +1753,7 @@ export default function Home() {
                           <h4 className="text-sm font-extrabold text-slate-800 dark:text-slate-200 font-heading">
                             {language === "th" ? "สรุปผลงานความสำเร็จและผลงานลดต้นทุน IT (สะสม 3 ปี)" : language === "zh" ? "3年期核心业绩与IT降本成果汇总" : "3-Year Key Achievements & IT Cost Reduction"}
                           </h4>
-                          <p className="text-[9px] font-bold text-slate-550 dark:text-slate-400 uppercase tracking-widest mt-0.5">
+                          <p className="text-[9px] font-bold text-slate-600 dark:text-slate-400 uppercase tracking-widest mt-0.5">
                             S.MEC Engineering Co., Ltd.
                           </p>
                         </div>
@@ -1776,7 +1772,7 @@ export default function Home() {
                             <div className={`shrink-0 w-6 h-6 rounded-full flex items-center justify-center mt-0.5 ${meta.bgClass}`}>
                               {meta.icon}
                             </div>
-                            <span className="text-xs text-slate-700 dark:text-slate-350 font-semibold leading-relaxed">
+                            <span className="text-xs text-slate-700 dark:text-slate-400 font-semibold leading-relaxed">
                               {ach}
                             </span>
                           </div>
@@ -1788,7 +1784,7 @@ export default function Home() {
                     <div className="border-t border-emerald-100/50 dark:border-emerald-900/30 pt-6 space-y-4">
                       <div className="flex items-center gap-2">
                         <Layers className="w-4 h-4 text-emerald-600 dark:text-emerald-400" />
-                        <h5 className="text-[11px] font-black uppercase tracking-wider text-slate-750 dark:text-slate-300 font-heading">
+                        <h5 className="text-[11px] font-black uppercase tracking-wider text-slate-700 dark:text-slate-300 font-heading">
                           {language === "th" ? "ระบบภายในและเว็บแอปพลิเคชันที่พัฒนา" : language === "zh" ? "自研系统与 Web 应用详情" : "Developed Systems & Web Applications"}
                         </h5>
                       </div>
@@ -1804,14 +1800,14 @@ export default function Home() {
                                 <span className={`text-[9px] font-bold uppercase tracking-widest px-2.5 py-0.5 rounded-full border ${
                                   (p.isFeatured || p.is_featured)
                                     ? "bg-blue-50 border-blue-100 text-blue-700 dark:bg-blue-950/40 dark:border-blue-900/30 dark:text-blue-400" 
-                                    : "bg-slate-50 border-slate-200 text-slate-550 dark:bg-slate-900/40 dark:border-slate-805/40 dark:text-slate-400"
+                                    : "bg-slate-50 border-slate-200 text-slate-600 dark:bg-slate-900/40 dark:border-slate-800/40 dark:text-slate-400"
                                 }`}>
                                   {(p.isFeatured || p.is_featured)
                                     ? uiTranslations[language].featuredProject 
                                     : (language === "th" ? "ระบบภายใน" : language === "zh" ? "内部自研系统" : "In-House System")}
                                 </span>
                               </div>
-                              <h4 className="text-[18px] font-extrabold text-slate-850 dark:text-slate-205 font-heading uppercase group-hover:text-blue-600 dark:group-hover:text-blue-450 transition-colors">
+                              <h4 className="text-[18px] font-extrabold text-slate-900 dark:text-slate-300 font-heading uppercase group-hover:text-blue-600 dark:group-hover:text-blue-450 transition-colors">
                                 {p.title}
                               </h4>
                               <p className="text-[17px] text-slate-600 dark:text-slate-400 leading-relaxed font-medium">
@@ -1822,7 +1818,7 @@ export default function Home() {
                             <div className="space-y-3">
                               <div className="flex flex-wrap gap-1.5">
                                 {p.tags?.map((tag: string, tIdx: number) => (
-                                  <span key={tIdx} className="text-[15px] font-bold text-slate-550 dark:text-slate-405 bg-slate-50/50 dark:bg-slate-950/30 border border-slate-200/80 dark:border-slate-800/80 px-2 py-0.5 rounded animate-pulse-subtle">
+                                  <span key={tIdx} className="text-[15px] font-bold text-slate-600 dark:text-slate-400 bg-slate-50/50 dark:bg-slate-950/30 border border-slate-200/80 dark:border-slate-800/80 px-2 py-0.5 rounded animate-pulse-subtle">
                                     {tag}
                                   </span>
                                 ))}
@@ -1886,7 +1882,7 @@ export default function Home() {
 
                         {/* Responsibilities list */}
                         {exp.responsibilities && exp.responsibilities.length > 0 && (
-                          <div className="space-y-1.5 text-[16px] text-slate-650 leading-relaxed font-medium">
+                          <div className="space-y-1.5 text-[16px] text-slate-600 leading-relaxed font-medium">
                             <h5 className="text-[13px] font-black text-slate-500 uppercase tracking-widest border-b border-slate-200 pb-1">
                               {uiTranslations[language].responsibilities}
                             </h5>
@@ -1983,7 +1979,7 @@ export default function Home() {
                                       {skill.proficiency}
                                     </span>
                                   )}
-                                  <span className="text-[10px] font-black text-slate-550 dark:text-slate-400 min-w-[28px] text-right">
+                                  <span className="text-[10px] font-black text-slate-600 dark:text-slate-400 min-w-[28px] text-right">
                                     {percent}%
                                   </span>
                                 </div>
@@ -2026,7 +2022,7 @@ export default function Home() {
                     <div key={index} className="neon-card border border-slate-200 bg-white shadow-sm overflow-hidden flex flex-col justify-between group hover:border-blue-300 transition-all duration-300">
                       
                       {/* Image Preview Container */}
-                      <div className="relative h-44 bg-slate-50 border-b border-slate-150 flex items-center justify-center overflow-hidden cursor-pointer"
+                      <div className="relative h-44 bg-slate-50 border-b border-slate-200 flex items-center justify-center overflow-hidden cursor-pointer"
                            onClick={() => {
                              if (assets.image_url) {
                                setPreviewUrl(assets.image_url);
@@ -2159,7 +2155,7 @@ export default function Home() {
                         <h5 className="font-bold text-emerald-800 text-base font-heading">
                           {uiTranslations[language].messageSentSuccess}
                         </h5>
-                        <p className="text-xs text-slate-650 max-w-sm mx-auto leading-relaxed font-medium">
+                        <p className="text-xs text-slate-600 max-w-sm mx-auto leading-relaxed font-medium">
                           {language === "th" 
                             ? `ข้อความของคุณถูกส่งไปยัง ${currentProfile.email} แล้ว เราจะติดต่อกลับโดยเร็วที่สุด` 
                             : language === "zh" 

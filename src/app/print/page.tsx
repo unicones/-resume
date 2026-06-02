@@ -528,7 +528,7 @@ function PrintPageContent() {
       <div className="min-h-screen bg-white flex items-center justify-center text-slate-800 font-sans p-6">
         <div className="text-center space-y-3">
           <div className="w-10 h-10 border-4 border-blue-600 border-t-transparent rounded-full animate-spin mx-auto"></div>
-          <p className="font-semibold text-lg text-slate-650">{t.preparingPrint}</p>
+          <p className="font-semibold text-lg text-slate-600">{t.preparingPrint}</p>
         </div>
       </div>
     );
@@ -693,7 +693,7 @@ function PrintPageContent() {
                   {experiences[0].accomplishments && experiences[0].accomplishments.length > 0 && (
                     <div className="mt-1 bg-slate-50/70 border border-slate-200/80 p-2 rounded-xl">
                       <span className="font-bold text-[9px] text-emerald-650 uppercase tracking-wider block mb-0.5">{t.accomplishmentTitle}</span>
-                      <ul className="list-disc list-outside pl-4 text-[9px] text-slate-650 space-y-0.5 leading-normal font-semibold">
+                      <ul className="list-disc list-outside pl-4 text-[9px] text-slate-600 space-y-0.5 leading-normal font-semibold">
                         {experiences[0].accomplishments.map((ac: string, acIdx: number) => (
                           <li key={acIdx}>{ac}</li>
                         ))}
@@ -774,7 +774,7 @@ function PrintPageContent() {
                 <div key={idx} className="bg-slate-50/50 border border-slate-200/80 p-2 rounded-xl space-y-0.5 flex flex-col justify-between">
                   <div>
                     <h3 className="font-bold text-[9.5px] text-slate-950 uppercase font-heading">{proj.title}</h3>
-                    <p className="text-[8.5px] text-slate-650 leading-relaxed font-medium mt-0.5">{proj.description}</p>
+                    <p className="text-[8.5px] text-slate-600 leading-relaxed font-medium mt-0.5">{proj.description}</p>
                   </div>
                 </div>
               ))}
