@@ -877,7 +877,7 @@ const mockSkills: { [key: string]: any[] } = {
     { category: "IT Infrastructure (หลัก)", name: "Cisco / Aruba / HP Switch", proficiency: "Advanced" },
     { category: "IT Infrastructure (หลัก)", name: "TP-Link Omada", proficiency: "Advanced" },
     { category: "IT Infrastructure (หลัก)", name: "Active Directory / GPO", proficiency: "Advanced" },
-    { category: "IT Infrastructure (หลัก)", name: "Microsoft 365", proficiency: "Advanced" },
+    { category: "IT Infrastructure (หลัก)", name: "Microsoft 365 SharePoint", proficiency: "Advanced" },
     { category: "IT Infrastructure (หลัก)", name: "VMware / Hyper-V", proficiency: "Advanced" },
     { category: "IT Infrastructure (หลัก)", name: "NAS / Backup", proficiency: "Advanced" },
     { category: "Development (เสริม)", name: "React / Next.js", proficiency: "Intermediate" },
@@ -893,7 +893,7 @@ const mockSkills: { [key: string]: any[] } = {
     { category: "IT Infrastructure (Primary)", name: "Cisco / Aruba / HP Switch", proficiency: "Advanced" },
     { category: "IT Infrastructure (Primary)", name: "TP-Link Omada", proficiency: "Advanced" },
     { category: "IT Infrastructure (Primary)", name: "Active Directory / GPO", proficiency: "Advanced" },
-    { category: "IT Infrastructure (Primary)", name: "Microsoft 365", proficiency: "Advanced" },
+    { category: "IT Infrastructure (Primary)", name: "Microsoft 365 SharePoint", proficiency: "Advanced" },
     { category: "IT Infrastructure (Primary)", name: "VMware / Hyper-V", proficiency: "Advanced" },
     { category: "IT Infrastructure (Primary)", name: "NAS / Backup", proficiency: "Advanced" },
     { category: "Development (Secondary)", name: "React / Next.js", proficiency: "Intermediate" },
@@ -909,7 +909,7 @@ const mockSkills: { [key: string]: any[] } = {
     { category: "IT 基础设施 (核心)", name: "Cisco / Aruba / HP 交换机", proficiency: "精通 (Advanced)" },
     { category: "IT 基础设施 (核心)", name: "TP-Link Omada 智能网络", proficiency: "精通 (Advanced)" },
     { category: "IT 基础设施 (核心)", name: "活动目录 (Active Directory) / 组策略 (GPO)", proficiency: "精通 (Advanced)" },
-    { category: "IT 基础设施 (核心)", name: "Microsoft 365 办公套件", proficiency: "精通 (Advanced)" },
+    { category: "IT 基础设施 (核心)", name: "Microsoft 365 SharePoint 办公套件", proficiency: "精通 (Advanced)" },
     { category: "IT 基础设施 (核心)", name: "VMware / Hyper-V 虚拟化", proficiency: "精通 (Advanced)" },
     { category: "IT 基础设施 (核心)", name: "NAS 存储 / 数据备份", proficiency: "精通 (Advanced)" },
     { category: "软件开发 (辅助)", name: "React / Next.js 框架", proficiency: "良好 (Intermediate)" },
@@ -1336,15 +1336,13 @@ export default function Home() {
   // Interactive circle progress values matching mockup layout style
   const circularSkills = useMemo(() => {
     return [
-      { name: "JavaScript", short: "JS", percent: 85, color: "stroke-[#ca8a04]" },
-      { name: "React", short: "React", percent: 80, color: "stroke-[#0284c7]" },
-      { name: "Node.js", short: "Node.js", percent: 75, color: "stroke-[#16a34a]" },
-      { name: "Python", short: "Python", percent: 70, color: "stroke-[#2563eb]" },
-      { name: "AWS", short: "AWS", percent: 80, color: "stroke-[#ea580c]" },
-      { name: "SQL DB", short: "SQL", percent: 85, color: "stroke-[#475569]" },
-      { name: "Fortigate FW", short: "FW", percent: 90, color: "stroke-[#dc2626]" },
-      { name: "Active Directory", short: "AD", percent: 90, color: "stroke-[#2563eb]" },
-      { name: "TP-Link Omada", short: "Omada", percent: 90, color: "stroke-[#0284c7]" }
+      { name: "Fortigate / Sophos / Zyxel", short: "FW", percent: 90, color: "stroke-[#dc2626]" },
+      { name: "Cisco / Aruba / HP Switch", short: "SW", percent: 90, color: "stroke-[#2563eb]" },
+      { name: "TP-Link Omada", short: "Omada", percent: 90, color: "stroke-[#0284c7]" },
+      { name: "Active Directory / GPO", short: "AD", percent: 90, color: "stroke-[#2563eb]" },
+      { name: "Microsoft 365 SharePoint", short: "SP", percent: 90, color: "stroke-[#0284c7]" },
+      { name: "VMware / Hyper-V", short: "VM", percent: 90, color: "stroke-[#0284c7]" },
+      { name: "NAS / Backup", short: "Backup", percent: 90, color: "stroke-[#475569]" }
     ];
   }, []);
 
@@ -1653,6 +1651,17 @@ export default function Home() {
                                 <path d="M3 9h18M3 15h18M9 3v6M15 3v6M6 9v6M12 9v6M18 9v6" />
                               </svg>
                             );
+                          case "SW":
+                            return (
+                              <svg className="w-5.5 h-5.5 text-[#2563eb]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                                <rect x="2" y="6" width="20" height="12" rx="2" />
+                                <rect x="5" y="10" width="3" height="3" />
+                                <rect x="10" y="10" width="3" height="3" />
+                                <rect x="15" y="10" width="3" height="3" />
+                                <circle cx="20" cy="9" r="0.5" fill="currentColor" />
+                                <circle cx="20" cy="12" r="0.5" fill="currentColor" />
+                              </svg>
+                            );
                           case "AD":
                             return (
                               <svg className="w-5 h-5 text-[#2563eb]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
@@ -1668,6 +1677,32 @@ export default function Home() {
                                 <circle cx="12" cy="18" r="1" fill="currentColor" />
                                 <path d="M5 12a10 10 0 0 1 14 0" />
                                 <path d="M8.5 15.5a5 5 0 0 1 7 0" />
+                              </svg>
+                            );
+                          case "SP":
+                            return (
+                              <svg className="w-5 h-5 text-[#0284c7]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                                <circle cx="12" cy="12" r="10" />
+                                <circle cx="12" cy="12" r="4" />
+                                <path d="M12 2v6M12 16v6M2 12h6M16 12h6" />
+                              </svg>
+                            );
+                          case "VM":
+                            return (
+                              <svg className="w-5 h-5 text-[#0284c7]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                                <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                                <path d="M2 17l10 5 10-5" />
+                                <path d="M2 12l10 5 10-5" />
+                                <path d="M12 12v10" />
+                              </svg>
+                            );
+                          case "Backup":
+                            return (
+                              <svg className="w-5 h-5 text-[#475569]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                                <ellipse cx="12" cy="6" rx="8" ry="3" />
+                                <path d="M4 6v6c0 1.66 3.58 3 8 3s8-1.34 8-3V6" />
+                                <path d="M4 12v6c0 1.66 3.58 3 8 3s8-1.34 8-3v-6" />
+                                <path d="M12 21v-6" />
                               </svg>
                             );
                           default:
@@ -1707,7 +1742,19 @@ export default function Home() {
                           </div>
 
                           <span className="text-[12px] font-bold text-[#475569] group-hover:text-slate-800 transition-colors mt-1.5 text-center leading-tight">
-                            {s.name === "Active Directory" ? "Active Directory" : s.name.split(" ")[0]}
+                            {s.name.includes("Active Directory") 
+                              ? "Active Directory" 
+                              : s.name.includes("SharePoint") 
+                                ? "SharePoint" 
+                                : s.name.includes("Switch") 
+                                  ? "Network Switch" 
+                                  : s.name.includes("Firewall") || s.name.includes("Fortigate") 
+                                    ? "Firewall" 
+                                    : s.name.includes("VMware") 
+                                      ? "VMware / Hyper-V" 
+                                      : s.name.includes("NAS") 
+                                        ? "NAS / Backup" 
+                                        : s.name.split(" ")[0]}
                           </span>
                         </div>
                       );

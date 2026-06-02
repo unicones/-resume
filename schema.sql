@@ -301,33 +301,20 @@ VALUES
 -- Insert Skills Data
 INSERT INTO public.skills (category, name, proficiency, order_index)
 VALUES
-('Network & Infrastructure', 'Firewall (Fortigate 100F)', 'Advanced', 1),
-('Network & Infrastructure', 'LAN / WAN & VLAN', 'Advanced', 2),
-('Network & Infrastructure', 'Router & Switch Configuration', 'Advanced', 3),
-('Network & Infrastructure', 'TCP/IP Networking', 'Advanced', 4),
-('Network & Infrastructure', 'TP-Link Omada Controller', 'Advanced', 5),
-('Network & Infrastructure', 'Active Directory & GPO', 'Advanced', 6),
-('Network & Infrastructure', 'Network Security', 'Advanced', 7),
-('Server & Cloud', 'Microsoft Azure (Entra ID)', 'Advanced', 8),
-('Server & Cloud', 'Microsoft 365 Admin & SharePoint', 'Advanced', 9),
-('Server & Cloud', 'VMware ESXi', 'Advanced', 10),
-('Server & Cloud', 'Nutanix (AHV)', 'Intermediate', 11),
-('Server & Cloud', 'Synology NAS Backup & DR', 'Advanced', 12),
-('Software & Dev', 'Next.js (App Router)', 'Intermediate', 13),
-('Software & Dev', 'React', 'Intermediate', 14),
-('Software & Dev', 'TypeScript', 'Intermediate', 15),
-('Software & Dev', 'Tailwind CSS v4', 'Advanced', 16),
-('Software & Dev', 'HTML5 & Vanilla CSS', 'Advanced', 17),
-('Software & Dev', 'Google Apps Script', 'Advanced', 18),
-('Software & Dev', 'Supabase Functions & PostgreSQL', 'Intermediate', 19),
-('Software & Dev', 'SQL Server Basic', 'Intermediate', 20),
-('Software & Dev', 'Google Sheets API', 'Advanced', 21),
-('Office & Systems', 'IP Phone Setup', 'Advanced', 22),
-('Office & Systems', 'CCTV Integration (IP & Fiber)', 'Advanced', 23),
-('Office & Systems', 'Finger Scan Centralization', 'Advanced', 24),
-('Office & Systems', 'AutoCAD Electrical', 'Intermediate', 25),
-('Languages', 'Thai', 'Native', 26),
-('Languages', 'English', 'Beginner', 27);
+('IT Infrastructure (หลัก)', 'Fortigate / Sophos / Zyxel', 'Advanced', 1),
+('IT Infrastructure (หลัก)', 'Cisco / Aruba / HP Switch', 'Advanced', 2),
+('IT Infrastructure (หลัก)', 'TP-Link Omada', 'Advanced', 3),
+('IT Infrastructure (หลัก)', 'Active Directory / GPO', 'Advanced', 4),
+('IT Infrastructure (หลัก)', 'Microsoft 365 SharePoint', 'Advanced', 5),
+('IT Infrastructure (หลัก)', 'VMware / Hyper-V', 'Advanced', 6),
+('IT Infrastructure (หลัก)', 'NAS / Backup', 'Advanced', 7),
+('Development (เสริม)', 'React / Next.js', 'Intermediate', 8),
+('Development (เสริม)', 'JavaScript / PHP', 'Intermediate', 9),
+('Development (เสริม)', 'SQL', 'Intermediate', 10),
+('Development (เสริม)', 'HTML/CSS', 'Advanced', 11),
+('Development (เสริม)', 'Python', 'Intermediate', 12),
+('Languages', 'Thai', 'Native', 13),
+('Languages', 'English', 'Beginner', 14);
 
 -- Insert Certifications Data
 INSERT INTO public.certifications (name, issuer, date, order_index, image_url)

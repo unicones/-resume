@@ -287,42 +287,54 @@ const mockExperiences = {
   ]
 };
 
-const mockSkills = {
+const mockSkills: { [key: string]: any[] } = {
   th: [
-    { category: "Network & Infrastructure", name: "Fortigate / Sophos Firewall", proficiency: "Advanced" },
-    { category: "Network & Infrastructure", name: "Cisco / Aruba / HP Switch", proficiency: "Advanced" },
-    { category: "Network & Infrastructure", name: "TP-Link Omada Controller", proficiency: "Advanced" },
-    { category: "Network & Infrastructure", name: "Active Directory & GPO", proficiency: "Advanced" },
-    { category: "Server & Cloud", name: "Microsoft M365 & Azure", proficiency: "Advanced" },
-    { category: "Server & Cloud", name: "VMware ESXi / Nutanix AHV", proficiency: "Advanced" },
-    { category: "Server & Cloud", name: "Synology NAS Backup & DR", proficiency: "Advanced" },
-    { category: "Development", name: "Next.js / React / TypeScript", proficiency: "Intermediate" },
-    { category: "Development", name: "Python / PHP / SQL Server", proficiency: "Intermediate" },
-    { category: "Development", name: "Google Apps Script & Sheets API", proficiency: "Advanced" }
+    { category: "IT Infrastructure (หลัก)", name: "Fortigate / Sophos / Zyxel", proficiency: "Advanced" },
+    { category: "IT Infrastructure (หลัก)", name: "Cisco / Aruba / HP Switch", proficiency: "Advanced" },
+    { category: "IT Infrastructure (หลัก)", name: "TP-Link Omada", proficiency: "Advanced" },
+    { category: "IT Infrastructure (หลัก)", name: "Active Directory / GPO", proficiency: "Advanced" },
+    { category: "IT Infrastructure (หลัก)", name: "Microsoft 365 SharePoint", proficiency: "Advanced" },
+    { category: "IT Infrastructure (หลัก)", name: "VMware / Hyper-V", proficiency: "Advanced" },
+    { category: "IT Infrastructure (หลัก)", name: "NAS / Backup", proficiency: "Advanced" },
+    { category: "Development (เสริม)", name: "React / Next.js", proficiency: "Intermediate" },
+    { category: "Development (เสริม)", name: "JavaScript / PHP", proficiency: "Intermediate" },
+    { category: "Development (เสริม)", name: "SQL", proficiency: "Intermediate" },
+    { category: "Development (เสริม)", name: "HTML/CSS", proficiency: "Advanced" },
+    { category: "Development (เสริม)", name: "Python", proficiency: "Intermediate" },
+    { category: "Languages", name: "Thai", proficiency: "Native" },
+    { category: "Languages", name: "English", proficiency: "Beginner" }
   ],
   en: [
-    { category: "Network & Infrastructure", name: "Fortigate / Sophos Firewall", proficiency: "Advanced" },
-    { category: "Network & Infrastructure", name: "Cisco / Aruba / HP Switch", proficiency: "Advanced" },
-    { category: "Network & Infrastructure", name: "TP-Link Omada Controller", proficiency: "Advanced" },
-    { category: "Network & Infrastructure", name: "Active Directory & GPO", proficiency: "Advanced" },
-    { category: "Server & Cloud", name: "Microsoft M365 & Azure", proficiency: "Advanced" },
-    { category: "Server & Cloud", name: "VMware ESXi / Nutanix AHV", proficiency: "Advanced" },
-    { category: "Server & Cloud", name: "Synology NAS Backup & DR", proficiency: "Advanced" },
-    { category: "Development", name: "Next.js / React / TypeScript", proficiency: "Intermediate" },
-    { category: "Development", name: "Python / PHP / SQL Server", proficiency: "Intermediate" },
-    { category: "Development", name: "Google Apps Script & Sheets API", proficiency: "Advanced" }
+    { category: "IT Infrastructure (Primary)", name: "Fortigate / Sophos / Zyxel", proficiency: "Advanced" },
+    { category: "IT Infrastructure (Primary)", name: "Cisco / Aruba / HP Switch", proficiency: "Advanced" },
+    { category: "IT Infrastructure (Primary)", name: "TP-Link Omada", proficiency: "Advanced" },
+    { category: "IT Infrastructure (Primary)", name: "Active Directory / GPO", proficiency: "Advanced" },
+    { category: "IT Infrastructure (Primary)", name: "Microsoft 365 SharePoint", proficiency: "Advanced" },
+    { category: "IT Infrastructure (Primary)", name: "VMware / Hyper-V", proficiency: "Advanced" },
+    { category: "IT Infrastructure (Primary)", name: "NAS / Backup", proficiency: "Advanced" },
+    { category: "Development (Secondary)", name: "React / Next.js", proficiency: "Intermediate" },
+    { category: "Development (Secondary)", name: "JavaScript / PHP", proficiency: "Intermediate" },
+    { category: "Development (Secondary)", name: "SQL", proficiency: "Intermediate" },
+    { category: "Development (Secondary)", name: "HTML/CSS", proficiency: "Advanced" },
+    { category: "Development (Secondary)", name: "Python", proficiency: "Intermediate" },
+    { category: "Languages", name: "Thai", proficiency: "Native" },
+    { category: "Languages", name: "English", proficiency: "Beginner" }
   ],
   zh: [
-    { category: "网络与基础设施", name: "飞塔 Fortigate / Sophos 防火墙", proficiency: "精通 (Advanced)" },
-    { category: "网络与基础设施", name: "思科 Cisco / 华三 Aruba 交换机", proficiency: "精通 (Advanced)" },
-    { category: "网络与基础设施", name: "TP-Link Omada 控制系统", proficiency: "精通 (Advanced)" },
-    { category: "网络与基础设施", name: "活动目录 (Active Directory) & GPO", proficiency: "精通 (Advanced)" },
-    { category: "服务器与云服务", name: "微软 M365 & Azure 云平台", proficiency: "精通 (Advanced)" },
-    { category: "服务器与云服务", name: "VMware ESXi / 路坦力 Nutanix", proficiency: "精通 (Advanced)" },
-    { category: "服务器与云服务", name: "群晖 Synology NAS 备份 & 灾备", proficiency: "精通 (Advanced)" },
-    { category: "软件开发", name: "Next.js / React / TypeScript", proficiency: "良好 (Intermediate)" },
-    { category: "软件开发", name: "Python / PHP / SQL Server 数据库", proficiency: "良好 (Intermediate)" },
-    { category: "软件开发", name: "Google Apps Script 脚本 & 接口", proficiency: "精通 (Advanced)" }
+    { category: "IT 基础设施 (核心)", name: "Fortigate / Sophos / Zyxel 防火墙", proficiency: "精通 (Advanced)" },
+    { category: "IT 基础设施 (核心)", name: "Cisco / Aruba / HP 交换机", proficiency: "精通 (Advanced)" },
+    { category: "IT 基础设施 (核心)", name: "TP-Link Omada 智能网络", proficiency: "精通 (Advanced)" },
+    { category: "IT 基础设施 (核心)", name: "活动目录 (Active Directory) / 组策略 (GPO)", proficiency: "精通 (Advanced)" },
+    { category: "IT 基础设施 (核心)", name: "Microsoft 365 SharePoint 办公套件", proficiency: "精通 (Advanced)" },
+    { category: "IT 基础设施 (核心)", name: "VMware / Hyper-V 虚拟化", proficiency: "精通 (Advanced)" },
+    { category: "IT 基础设施 (核心)", name: "NAS 存储 / 数据备份", proficiency: "精通 (Advanced)" },
+    { category: "软件开发 (辅助)", name: "React / Next.js 框架", proficiency: "良好 (Intermediate)" },
+    { category: "软件开发 (辅助)", name: "JavaScript / PHP 编程", proficiency: "良好 (Intermediate)" },
+    { category: "软件开发 (辅助)", name: "SQL 数据库", proficiency: "良好 (Intermediate)" },
+    { category: "软件开发 (辅助)", name: "HTML/CSS 网页设计", proficiency: "精通 (Advanced)" },
+    { category: "软件开发 (辅助)", name: "Python 编程", proficiency: "良好 (Intermediate)" },
+    { category: "语言能力", name: "泰语 (Thai)", proficiency: "母语 (Native)" },
+    { category: "语言能力", name: "英语 (English)", proficiency: "初级 (Beginner)" }
   ]
 };
 
