@@ -229,7 +229,7 @@ const mockProjects: { [key: string]: any[] } = {
       id: "proj-1",
       title: "MEC CALIBRATION SYSTEM",
       company: "S.MEC Engineering",
-      description: "ระบบจัดการและสอบเทียบเครื่องมือวัดสำหรับ 17 ไซต์งานก่อสร้าง รองรับการบันทึกประวัติการสอบเทียบ ตรวจสอบต้นทุน ส่งออก PDF และการอนุมัติโอนย้ายอุปกรณ์โดย Super Admin",
+      description: "ระบบบันทึกประวัติและสอบเทียบเครื่องมือวัดของไซต์งานก่อสร้างทั้ง 17 แห่ง ใช้ตรวจสอบค่าใช้จ่าย ส่งออกเอกสาร PDF และทำเรื่องขอโอนย้ายอุปกรณ์ข้ามไซต์งานโดยมี Super Admin เป็นผู้อนุมัติ",
       tags: ["React", "TypeScript", "Vite", "Tailwind CSS", "Supabase", "Google Drive API"],
       link: "#",
       isFeatured: true
@@ -238,7 +238,7 @@ const mockProjects: { [key: string]: any[] } = {
       id: "proj-2",
       title: "IT PROJECT DASHBOARD",
       company: "S.MEC Engineering",
-      description: "ระบบติดตามแผนงานและควบคุมงบประมาณแผนกไอทีประจำปี (Capex & Opex) แสดงผลในรูปแบบ Gantt Chart พร้อมใช้เป็นระบบตัวชี้วัด (KPI) เพื่อติดตามงานและประเมินผลการปฏิบัติงานของเจ้าหน้าที่ไอทีในทีม",
+      description: "ระบบติดตามแผนงานและงบประมาณไอทีรายปี (Capex & Opex) ในรูปแบบ Gantt Chart พร้อมใช้เป็นระบบวัดผลงาน (KPI) ของเจ้าหน้าที่ไอทีในทีม",
       tags: ["Next.js", "Vercel", "Google Apps Script", "Google Sheets"],
       link: "#"
     },
@@ -246,7 +246,7 @@ const mockProjects: { [key: string]: any[] } = {
       id: "proj-3",
       title: "IN-HOUSE HELP DESK",
       company: "S.MEC Engineering",
-      description: "ระบบรับแจ้งซ่อมและช่วยเหลือไอทีสนับสนุนผู้ใช้กว่า 160 คน พร้อมระบบแจ้งเตือนผ่าน LINE และ Email อัตโนมัติ",
+      description: "ระบบแจ้งซ่อมคอมพิวเตอร์และช่วยเหลือปัญหาไอทีของพนักงาน 160 คน พร้อมระบบส่งแจ้งเตือนผ่าน LINE และอีเมลอัตโนมัติ",
       tags: ["HTML", "Vanilla JS", "PHP", "PostgreSQL", "LINE Notify API"],
       link: "#"
     },
@@ -254,7 +254,7 @@ const mockProjects: { [key: string]: any[] } = {
       id: "proj-4",
       title: "PRINT COST DASHBOARD",
       company: "S.MEC Engineering",
-      description: "ระบบวิเคราะห์และตรวจสอบค่าใช้จ่ายในการพิมพ์เอกสารรายแผนก เพื่อเพิ่มความคุ้มค่าและลด Opex",
+      description: "ระบบวิเคราะห์และสรุปยอดค่าใช้จ่ายการพิมพ์เอกสารแยกตามแผนก ช่วยควบคุมและลดค่าใช้จ่ายไอที (Opex) ขององค์กร",
       tags: ["Python", "Pandas", "SQL Server", "PowerBI"],
       link: "#"
     },
@@ -262,7 +262,7 @@ const mockProjects: { [key: string]: any[] } = {
       id: "proj-5",
       title: "LICENSE TRACKER",
       company: "S.MEC Engineering",
-      description: "ระบบจัดการและจัดสรรซอฟต์แวร์ลิขสิทธิ์ของบริษัท (M365, AutoCAD, ZwCAD) ช่วยประหยัดงบได้กว่า 1.12 ล้านบาท/ปี",
+      description: "ระบบบริหารและจัดสรรสิทธิ์โปรแกรมลิขสิทธิ์ของบริษัท (เช่น M365, AutoCAD, ZwCAD) ช่วยประหยัดค่าใช้จ่ายได้กว่า 1.12 ล้านบาทต่อปี",
       tags: ["Next.js", "Vite", "Supabase DB", "Excel API"],
       link: "#"
     },
@@ -270,7 +270,7 @@ const mockProjects: { [key: string]: any[] } = {
       id: "proj-6",
       title: "MEC PROJECT COST DASHBOARD",
       company: "S.MEC Engineering",
-      description: "ระบบแดชบอร์ดวิเคราะห์และติดตามค่าใช้จ่ายแบบ Real-time ของโครงการก่อสร้างทั้ง 17 ไซต์งาน ช่วยให้ผู้บริหารระดับสูงมองเห็นความเคลื่อนไหวทางงบประมาณเพื่อควบคุมต้นทุนและประเมินความคุ้มค่าได้อย่างแม่นยำ",
+      description: "แดชบอร์ดสรุปค่าใช้จ่ายโครงการก่อสร้างทั้ง 17 ไซต์งานแบบ Real-time เพื่อให้ผู้บริหารตรวจสอบสถานะการเงินและควบคุมงบประมาณของแต่ละโครงการได้ทันที",
       tags: ["Next.js", "Supabase", "SQL", "Python", "Vercel"],
       link: "#"
     }
@@ -280,7 +280,7 @@ const mockProjects: { [key: string]: any[] } = {
       id: "proj-1",
       title: "MEC CALIBRATION SYSTEM",
       company: "S.MEC Engineering",
-      description: "Equipment calibration management system for 17 construction sites. Supports calibration logs, cost tracking, PDF exports, and equipment transfers requiring Super Admin approval.",
+      description: "Calibration tracking system for 17 construction sites, allowing users to log records, check costs, export PDFs, and transfer equipment with Super Admin approval.",
       tags: ["React", "TypeScript", "Vite", "Tailwind CSS", "Supabase", "Google Drive API"],
       link: "#",
       isFeatured: true
@@ -289,7 +289,7 @@ const mockProjects: { [key: string]: any[] } = {
       id: "proj-2",
       title: "IT PROJECT DASHBOARD",
       company: "S.MEC Engineering",
-      description: "Annual IT department project planning & budget tracking system (Capex & Opex) rendered as a Gantt chart. Serves as a KPI tool to evaluate IT team members' performance.",
+      description: "Annual IT project and budget planner (Capex & Opex) rendered in a Gantt chart, featuring performance reviews (KPIs) for IT team members.",
       tags: ["Next.js", "Vercel", "Google Apps Script", "Google Sheets"],
       link: "#"
     },
@@ -297,7 +297,7 @@ const mockProjects: { [key: string]: any[] } = {
       id: "proj-3",
       title: "IN-HOUSE HELP DESK",
       company: "S.MEC Engineering",
-      description: "Ticketing & support system assisting 160+ internal users, integrated with automated LINE Notify and Email alerts.",
+      description: "IT support and ticketing system assisting 160 users, with automated notifications sent via LINE and email.",
       tags: ["HTML", "Vanilla JS", "PHP", "PostgreSQL", "LINE Notify API"],
       link: "#"
     },
@@ -305,7 +305,7 @@ const mockProjects: { [key: string]: any[] } = {
       id: "proj-4",
       title: "PRINT COST DASHBOARD",
       company: "S.MEC Engineering",
-      description: "Departmental print cost tracking and analysis dashboard to optimize costs and minimize Opex.",
+      description: "Print cost analysis tool tracking printer expenses by department, helping control and reduce IT operating expenses (Opex).",
       tags: ["Python", "Pandas", "SQL Server", "PowerBI"],
       link: "#"
     },
@@ -313,7 +313,7 @@ const mockProjects: { [key: string]: any[] } = {
       id: "proj-5",
       title: "LICENSE TRACKER",
       company: "S.MEC Engineering",
-      description: "Corporate software license manager (M365, AutoCAD, ZwCAD), helping save over 1.12 million Baht/year.",
+      description: "Corporate software license manager (e.g., M365, AutoCAD, ZwCAD), helping save over 1.12 million Baht/year.",
       tags: ["Next.js", "Vite", "Supabase DB", "Excel API"],
       link: "#"
     },
@@ -321,7 +321,7 @@ const mockProjects: { [key: string]: any[] } = {
       id: "proj-6",
       title: "MEC PROJECT COST DASHBOARD",
       company: "S.MEC Engineering",
-      description: "Real-time project cost analysis dashboard monitoring expenses across 17 construction sites, enabling executive management to track budgets, optimize costs, and make informed strategic decisions.",
+      description: "Real-time dashboard summarizing expenses across 17 construction sites, helping management monitor budgets and control project costs instantly.",
       tags: ["Next.js", "Supabase", "SQL", "Python", "Vercel"],
       link: "#"
     }
@@ -331,7 +331,7 @@ const mockProjects: { [key: string]: any[] } = {
       id: "proj-1",
       title: "MEC 仪器校验与管理系统",
       company: "S.MEC Engineering",
-      description: "用于公司 17 个建筑工地的仪器设备校验与管理系统。支持校验历史记录、成本跟踪、PDF 导出，以及超级管理员审批设备转移等功能。",
+      description: "17个工地的仪器校验管理系统，支持校验记录登记、成本核算、PDF导出以及经超级管理员审批的设备跨工地调拨。",
       tags: ["React", "TypeScript", "Vite", "Tailwind CSS", "Supabase", "Google Drive API"],
       link: "#",
       isFeatured: true
@@ -340,7 +340,7 @@ const mockProjects: { [key: string]: any[] } = {
       id: "proj-2",
       title: "IT 项目管理看板",
       company: "S.MEC Engineering",
-      description: "年度 IT 部门计划与预算跟踪系统（Capex & Opex）。以甘特图形式展示，并作为 IT 团队员工的关键绩效指标（KPI）考核工具。",
+      description: "甘特图形式的年度IT项目与预算规划系统（Capex & Opex），并包含IT团队成员的绩效考核（KPI）功能。",
       tags: ["Next.js", "Vercel", "Google Apps Script", "Google Sheets"],
       link: "#"
     },
@@ -348,7 +348,7 @@ const mockProjects: { [key: string]: any[] } = {
       id: "proj-3",
       title: "企业内部 IT 工单系统",
       company: "S.MEC Engineering",
-      description: "为 160 多名员工提供 IT 技术 support 与工单管理，具备 LINE 及电子邮件自动通知功能。",
+      description: "服务于160名员工的IT故障报修系统，支持通过LINE和电子邮件自动发送派单与进度通知。",
       tags: ["HTML", "Vanilla JS", "PHP", "PostgreSQL", "LINE Notify API"],
       link: "#"
     },
@@ -356,7 +356,7 @@ const mockProjects: { [key: string]: any[] } = {
       id: "proj-4",
       title: "打印成本分析看板",
       company: "S.MEC Engineering",
-      description: "用于分析和监控各部门打印支出的系统，助力企业降本增效。",
+      description: "按部门统计和分析打印费用的工具，帮助企业监控和降低IT运营成本（Opex）。",
       tags: ["Python", "Pandas", "SQL Server", "PowerBI"],
       link: "#"
     },
@@ -364,7 +364,7 @@ const mockProjects: { [key: string]: any[] } = {
       id: "proj-5",
       title: "软件授权跟踪系统",
       company: "S.MEC Engineering",
-      description: "企业软件授权（M365, AutoCAD, ZwCAD）管理系统，每年为公司节省超 112 万泰铢。",
+      description: "公司正版软件授权（如 M365、AutoCAD、ZwCAD）管理系统，每年为公司节省超112万泰铢。",
       tags: ["Next.js", "Vite", "Supabase DB", "Excel API"],
       link: "#"
     },
@@ -372,7 +372,7 @@ const mockProjects: { [key: string]: any[] } = {
       id: "proj-6",
       title: "MEC PROJECT COST DASHBOARD",
       company: "S.MEC Engineering",
-      description: "17个在建项目的实时成本分析看板，用于监控和报告项目支出，帮助管理层实时掌控预算、优化成本并做出精准的战略决策。",
+      description: "17个工地的实时项目成本看板，方便管理层随时查看财务状况并即时控制各项目预算。",
       tags: ["Next.js", "Supabase", "SQL", "Python", "Vercel"],
       link: "#"
     }
@@ -1435,7 +1435,7 @@ export default function Home() {
               <h3 className="font-black text-xl tracking-[0.1em] text-slate-800 font-heading uppercase">
                 {currentProfile.name ? currentProfile.name.split(" ")[0] : "PATIWAT"}
               </h3>
-              <p className="text-[12px] text-slate-500 font-semibold mt-1.5 font-heading">
+              <p className="text-[14px] text-slate-550 font-semibold mt-1.5 font-heading">
                 {currentProfile.title || "IT Manager & Infrastructure"}
               </p>
             </div>
@@ -1781,10 +1781,10 @@ export default function Home() {
                                     : (language === "th" ? "ระบบภายใน" : language === "zh" ? "内部自研系统" : "In-House System")}
                                 </span>
                               </div>
-                              <h4 className="text-sm font-extrabold text-slate-850 dark:text-slate-205 font-heading uppercase group-hover:text-blue-600 dark:group-hover:text-blue-450 transition-colors">
+                              <h4 className="text-[18px] font-extrabold text-slate-850 dark:text-slate-205 font-heading uppercase group-hover:text-blue-600 dark:group-hover:text-blue-450 transition-colors">
                                 {p.title}
                               </h4>
-                              <p className="text-[13px] text-slate-600 dark:text-slate-400 leading-relaxed font-medium">
+                              <p className="text-[17px] text-slate-600 dark:text-slate-400 leading-relaxed font-medium">
                                 {p.description}
                               </p>
                             </div>
@@ -1792,7 +1792,7 @@ export default function Home() {
                             <div className="space-y-3">
                               <div className="flex flex-wrap gap-1.5">
                                 {p.tags?.map((tag: string, tIdx: number) => (
-                                  <span key={tIdx} className="text-[11px] font-bold text-slate-550 dark:text-slate-405 bg-slate-50/50 dark:bg-slate-950/30 border border-slate-200/80 dark:border-slate-800/80 px-2 py-0.5 rounded animate-pulse-subtle">
+                                  <span key={tIdx} className="text-[15px] font-bold text-slate-550 dark:text-slate-405 bg-slate-50/50 dark:bg-slate-950/30 border border-slate-200/80 dark:border-slate-800/80 px-2 py-0.5 rounded animate-pulse-subtle">
                                     {tag}
                                   </span>
                                 ))}
@@ -1856,8 +1856,8 @@ export default function Home() {
 
                         {/* Responsibilities list */}
                         {exp.responsibilities && exp.responsibilities.length > 0 && (
-                          <div className="space-y-1.5 text-sm text-slate-650 leading-relaxed font-medium">
-                            <h5 className="text-[11px] font-black text-slate-500 uppercase tracking-widest border-b border-slate-200 pb-1">
+                          <div className="space-y-1.5 text-[16px] text-slate-650 leading-relaxed font-medium">
+                            <h5 className="text-[13px] font-black text-slate-500 uppercase tracking-widest border-b border-slate-200 pb-1">
                               {uiTranslations[language].responsibilities}
                             </h5>
                             <ul className="list-disc list-outside pl-4 space-y-1">
