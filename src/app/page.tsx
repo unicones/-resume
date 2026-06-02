@@ -1144,7 +1144,24 @@ export default function Home() {
       if (projects && projects[language]) {
         list = projects[language];
       } else if (Array.isArray(projects)) {
-        list = projects;
+        list = projects.map((p: any, idx: number) => {
+          const titleKey = p.title?.toUpperCase();
+          const titleToIndex: { [key: string]: number } = {
+            "MEC CALIBRATION SYSTEM": 0,
+            "IT PROJECT DASHBOARD": 1,
+            "IN-HOUSE HELP DESK": 2,
+            "PRINT COST DASHBOARD": 3,
+            "LICENSE TRACKER": 4,
+            "MEC PROJECT COST DASHBOARD": 5
+          };
+          const matchIdx = titleKey in titleToIndex ? titleToIndex[titleKey] : idx;
+          const match = mockProjects[language]?.[matchIdx];
+          return {
+            ...p,
+            title: match ? match.title : p.title,
+            description: match ? match.description : p.description
+          };
+        });
       } else {
         list = mockProjects[language] || mockProjects.th || [];
       }
