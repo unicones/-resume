@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+Thai:wght@300;400;500;600;700;800&display=swap');
+
+@import "tailwindcss";
+
+:root {
+  --background: #f8fafc; /* Slate 50 background */
+  --foreground: #0f172a; /* Slate 900 foreground text */
+  --font-sans: 'Inter', 'Noto Sans Thai', sans-serif;
+  --font-heading: 'Inter', 'Noto Sans Thai', sans-serif;
+}
+
+html {
+  font-size: 18px; /* Increased font size by +2px */
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.8; /* comfortable line spacing */
+}
+
+h1, h2, h3, h4, h5, h6, .font-heading {
+  font-family: var(--font-heading);
+}
+
+/* Background Grid Overlay in Light Theme */
+.bg-grid-pattern {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(15, 23, 42, 0.015) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(15, 23, 42, 0.015) 1px, transparent 1px);
+}
+
+/* Premium Light Corporate Card */
+.neon-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0; /* slate-200 */
+  border-radius: 20px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.05); /* very soft elegant shadow */
+}
+
+.neon-card:hover {
+  border-color: #cbd5e1; /* slate-300 */
+  box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.08);
+  transform: translateY(-2px);
+}
+
+/* High Contrast Accent texts */
+.glow-text {
+  text-shadow: none;
+  color: #0284c7; /* Sky-600 */
+}
+
+.glow-text-purple {
+  text-shadow: none;
+  color: #7c3aed; /* Purple-600 */
+}
+
+/* Professional Corporate Buttons */
+.btn-neon {
+  background: #2563eb; /* blue-600 */
+  border: 1px solid #2563eb;
+  color: #ffffff;
+  box-shadow: 0 2px 4px rgba(37, 99, 235, 0.1);
+  transition: all 0.25s ease;
+  font-weight: 700;
+}
+
+.btn-neon:hover {
+  background: #1d4ed8; /* blue-700 */
+  border-color: #1d4ed8;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+  transform: translateY(-1px);
+}
+
+/* Timeline Custom Styles - clean slate */
+.timeline-line {
+  background: #cbd5e1; /* slate-300 */
+}
+
+/* Hide scrollbar default utilities */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Spin animation speed adjustment */
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.animate-spin-slow {
+  animation: spin-slow 20s linear infinite;
+}
+
+/* Fade-in for modal overlay */
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.animate-fade-in {
+  animation: fade-in 0.25s ease-out forwards;
+}
+
+/* Interactive Icon Animations for Premium Look */
+.icon-wiggle {
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.group:hover .icon-wiggle,
+.icon-wiggle:hover {
+  transform: scale(1.15) rotate(8deg);
+}
+
+.icon-spin-hover {
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.group:hover .icon-spin-hover,
+.icon-spin-hover:hover {
+  transform: rotate(360deg) scale(1.1);
+}
+
+.icon-pulse-hover {
+  transition: all 0.3s ease;
+}
+.group:hover .icon-pulse-hover,
+.icon-pulse-hover:hover {
+  transform: scale(1.12);
+  filter: drop-shadow(0 0 6px rgba(124, 58, 237, 0.45));
+}
+
+.icon-bounce-hover {
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.group:hover .icon-bounce-hover,
+.icon-bounce-hover:hover {
+  transform: translateY(-4px) scale(1.1);
+}
