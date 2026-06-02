@@ -1760,7 +1760,7 @@ export default function Home() {
                               <h4 className="text-sm font-extrabold text-slate-850 dark:text-slate-205 font-heading uppercase group-hover:text-blue-600 dark:group-hover:text-blue-450 transition-colors">
                                 {p.title}
                               </h4>
-                              <p className="text-[11px] text-slate-600 dark:text-slate-400 leading-relaxed font-medium">
+                              <p className="text-[13px] text-slate-600 dark:text-slate-400 leading-relaxed font-medium">
                                 {p.description}
                               </p>
                             </div>
@@ -1768,7 +1768,7 @@ export default function Home() {
                             <div className="space-y-3">
                               <div className="flex flex-wrap gap-1.5">
                                 {p.tags?.map((tag: string, tIdx: number) => (
-                                  <span key={tIdx} className="text-[9px] font-bold text-slate-550 dark:text-slate-405 bg-slate-50/50 dark:bg-slate-950/30 border border-slate-200/80 dark:border-slate-800/80 px-2 py-0.5 rounded animate-pulse-subtle">
+                                  <span key={tIdx} className="text-[11px] font-bold text-slate-550 dark:text-slate-405 bg-slate-50/50 dark:bg-slate-950/30 border border-slate-200/80 dark:border-slate-800/80 px-2 py-0.5 rounded animate-pulse-subtle">
                                     {tag}
                                   </span>
                                 ))}
@@ -1776,10 +1776,10 @@ export default function Home() {
                               {p.link && (
                                 <a
                                   href={p.link}
-                                  className="inline-flex items-center gap-1 text-[10px] font-black text-blue-600 dark:text-blue-400 uppercase tracking-widest hover:text-blue-800 dark:hover:text-blue-300 transition-colors"
+                                  className="inline-flex items-center gap-1 text-[12px] font-black text-blue-600 dark:text-blue-400 uppercase tracking-widest hover:text-blue-800 dark:hover:text-blue-300 transition-colors"
                                 >
                                   <span>{uiTranslations[language].exploreDetails}</span>
-                                  <ExternalLink className="w-3 h-3" />
+                                  <ExternalLink className="w-3.5 h-3.5" />
                                 </a>
                               )}
                             </div>
