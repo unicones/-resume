@@ -95,7 +95,7 @@ INSERT INTO public.profiles (name, title, bio, email, phone, line_id, address, b
 VALUES (
     'ปฏิวัติ มีแก้ว (Patiwat Meekaeo)',
     'ผู้จัดการแผนกไอที (IT Manager & Infrastructure)',
-    'ผู้เชี่ยวชาญด้านระบบโครงสร้างพื้นฐานไอที (IT Infrastructure & Network Engineer) ที่มีทักษะในการพัฒนาซอฟต์แวร์ (SQL, JavaScript, Python, PHP) ประสบการณ์กว่า 9 ปีในการบริหารจัดการระบบคอมพิวเตอร์และเครือข่ายในองค์กร ปัจจุบันดูแลระบบไอทีสำหรับผู้ใช้งานกว่า 160 คน ควบคุมดูแลระบบความปลอดภัยผ่าน Fortigate 100F และ Multi-WAN load-balancing มุ่งเน้นการใช้ทักษะทางโปรแกรมมิ่งเพื่อสร้าง In-House Web Applications ช่วยเพิ่มประสิทธิภาพการทำงานและลดต้นทุนด้านไอที (IT cost reduction) พร้อมเติบโตไปกับองค์กรอย่างมั่นคง',
+    'นักบริหารระบบไอทีประสบการณ์กว่า 9 ปี ผู้เชี่ยวชาญการออกแบบและวางระบบโครงสร้างพื้นฐานเครือข่ายระดับองค์กร (Network Infrastructure, Active Directory, Windows Server), การบริหารจัดการระบบสำรองข้อมูล (Backup & Recovery ด้วย Veeam และ NAS) และระบบเฝ้าระวังเครือข่าย (Network Monitoring) ควบคู่ไปกับการดูแลระบบคลาวด์ Microsoft 365 (Email, SharePoint), ไฟร์วอลล์ (Firewall เช่น Fortigate, Sophos) และควบคุมระบบ ERP ในฐานะ Administrator (Mango ERP, Oracle ERP) นอกจากนี้ยังมีทักษะในการพัฒนาระบบเว็บแอปพลิเคชันและจัดการฐานข้อมูลภายในองค์กรโดยใช้ Python, SQL, JavaScript และ PHP เพื่อเพิ่มประสิทธิภาพการทำงานและลดต้นทุนไอทีอย่างเป็นรูปธรรม ปัจจุบันดำรงตำแหน่งผู้จัดการแผนกไอที (Acting IT Manager & Infrastructure) ที่ S.MEC Engineering ควบคุมดูแลระบบไอทีครบวงจรเพื่อสนับสนุนผู้ใช้งานกว่า 160 คน โดยมีทักษะครอบคลุมตั้งแต่การวางระบบเครือข่ายหลัก ไปจนถึงการเขียนโปรแกรมและการจัดการข้อมูลอย่างเป็นระบบ',
     'patiwatmeekaeo@gmail.com',
     '081-601-9666',
     'allfile',

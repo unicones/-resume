@@ -188,7 +188,7 @@ const mockProfile: { [key: string]: any } = {
   th: {
     name: "ปฏิวัติ มีแก้ว (Patiwat Meekaeo)",
     title: "ผู้จัดการแผนกไอที (IT Manager & Infrastructure)",
-    bio: "นักบริหารระบบ IT ที่มีประสบการณ์กว่า 9 ปี ครอบคลุมงานด้าน Network Infrastructure, Server, Security และ Cloud ปัจจุบันดำรงตำแหน่ง IT Manager (Acting) ที่ S.MEC Engineering ดูแลระบบ IT ให้พนักงานกว่า 160 คน และบริหารโครงสร้างพื้นฐาน IT ครบวงจรตั้งแต่ศูนย์\nมีความเชี่ยวชาญด้าน Firewall (Fortigate, Sophos), Network (Cisco, Aruba, TP-Link Omada), Microsoft 365, Active Directory และการพัฒนาเว็บแอปพลิเคชันภายในองค์กร นอกจากนี้ยังมีประสบการณ์ด้านการออกแบบ ติดตั้ง และ Config ระบบ Network ให้ลูกค้าองค์กรจากการทำงานที่ ITK Connecting",
+    bio: "นักบริหารระบบไอทีประสบการณ์กว่า 9 ปี ผู้เชี่ยวชาญการออกแบบและวางระบบโครงสร้างพื้นฐานเครือข่ายระดับองค์กร (Network Infrastructure, Active Directory, Windows Server), การบริหารจัดการระบบสำรองข้อมูล (Backup & Recovery ด้วย Veeam และ NAS) และระบบเฝ้าระวังเครือข่าย (Network Monitoring) ควบคู่ไปกับการดูแลระบบคลาวด์ Microsoft 365 (Email, SharePoint), ไฟร์วอลล์ (Firewall เช่น Fortigate, Sophos) และควบคุมระบบ ERP ในฐานะ Administrator (Mango ERP, Oracle ERP) นอกจากนี้ยังมีทักษะในการพัฒนาระบบเว็บแอปพลิเคชันและจัดการฐานข้อมูลภายในองค์กรโดยใช้ Python, SQL, JavaScript และ PHP เพื่อเพิ่มประสิทธิภาพการทำงานและลดต้นทุนไอทีอย่างเป็นรูปธรรม\nปัจจุบันดำรงตำแหน่งผู้จัดการแผนกไอที (Acting IT Manager & Infrastructure) ที่ S.MEC Engineering ควบคุมดูแลระบบไอทีครบวงจรเพื่อสนับสนุนผู้ใช้งานกว่า 160 คน โดยมีทักษะครอบคลุมตั้งแต่การวางระบบเครือข่ายหลัก ไปจนถึงการเขียนโปรแกรมและการจัดการข้อมูลอย่างเป็นระบบ",
     email: "patiwatmeekaeo@gmail.com",
     phone: "081-601-9666",
     address: "กรุงเทพมหานคร, ประเทศไทย",
