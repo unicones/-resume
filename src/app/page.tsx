@@ -265,6 +265,14 @@ const mockProjects: { [key: string]: any[] } = {
       description: "ระบบจัดการและจัดสรรซอฟต์แวร์ลิขสิทธิ์ของบริษัท (M365, AutoCAD, ZwCAD) ช่วยประหยัดงบได้กว่า 1.12 ล้านบาท/ปี",
       tags: ["Next.js", "Vite", "Supabase DB", "Excel API"],
       link: "#"
+    },
+    {
+      id: "proj-6",
+      title: "MEC PROJECT COST DASHBOARD",
+      company: "S.MEC Engineering",
+      description: "ระบบแดชบอร์ดวิเคราะห์และติดตามค่าใช้จ่ายแบบ Real-time ของโครงการก่อสร้างทั้ง 17 ไซต์งาน ช่วยให้ผู้บริหารระดับสูงมองเห็นความเคลื่อนไหวทางงบประมาณเพื่อควบคุมต้นทุนและประเมินความคุ้มค่าได้อย่างแม่นยำ",
+      tags: ["Next.js", "Supabase", "SQL", "Python", "Vercel"],
+      link: "#"
     }
   ],
   en: [
@@ -308,6 +316,14 @@ const mockProjects: { [key: string]: any[] } = {
       description: "Corporate software license manager (M365, AutoCAD, ZwCAD), helping save over 1.12 million Baht/year.",
       tags: ["Next.js", "Vite", "Supabase DB", "Excel API"],
       link: "#"
+    },
+    {
+      id: "proj-6",
+      title: "MEC PROJECT COST DASHBOARD",
+      company: "S.MEC Engineering",
+      description: "Real-time project cost analysis dashboard monitoring expenses across 17 construction sites, enabling executive management to track budgets, optimize costs, and make informed strategic decisions.",
+      tags: ["Next.js", "Supabase", "SQL", "Python", "Vercel"],
+      link: "#"
     }
   ],
   zh: [
@@ -350,6 +366,14 @@ const mockProjects: { [key: string]: any[] } = {
       company: "S.MEC Engineering",
       description: "企业软件授权（M365, AutoCAD, ZwCAD）管理系统，每年为公司节省超 112 万泰铢。",
       tags: ["Next.js", "Vite", "Supabase DB", "Excel API"],
+      link: "#"
+    },
+    {
+      id: "proj-6",
+      title: "MEC PROJECT COST DASHBOARD",
+      company: "S.MEC Engineering",
+      description: "17个在建项目的实时成本分析看板，用于监控和报告项目支出，帮助管理层实时掌控预算、优化成本并做出精准的战略决策。",
+      tags: ["Next.js", "Supabase", "SQL", "Python", "Vercel"],
       link: "#"
     }
   ]
