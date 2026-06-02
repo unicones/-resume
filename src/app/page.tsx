@@ -1336,15 +1336,15 @@ export default function Home() {
   // Interactive circle progress values matching mockup layout style
   const circularSkills = useMemo(() => {
     return [
-      { name: "JavaScript", short: "JS", percent: 85, color: "stroke-yellow-500" },
-      { name: "React", short: "React", percent: 80, color: "stroke-sky-500" },
-      { name: "Node.js", short: "Node.js", percent: 75, color: "stroke-green-600" },
-      { name: "Python", short: "Python", percent: 70, color: "stroke-amber-600" },
-      { name: "AWS", short: "AWS", percent: 80, color: "stroke-orange-500" },
-      { name: "SQL DB", short: "SQL", percent: 85, color: "stroke-purple-650" },
-      { name: "Fortigate FW", short: "FW", percent: 90, color: "stroke-rose-600" },
+      { name: "JavaScript", short: "JS", percent: 85, color: "stroke-blue-600" },
+      { name: "React", short: "React", percent: 80, color: "stroke-blue-600" },
+      { name: "Node.js", short: "Node.js", percent: 75, color: "stroke-blue-600" },
+      { name: "Python", short: "Python", percent: 70, color: "stroke-blue-600" },
+      { name: "AWS", short: "AWS", percent: 80, color: "stroke-blue-600" },
+      { name: "SQL DB", short: "SQL", percent: 85, color: "stroke-blue-600" },
+      { name: "Fortigate FW", short: "FW", percent: 90, color: "stroke-blue-600" },
       { name: "Active Directory", short: "AD", percent: 90, color: "stroke-blue-600" },
-      { name: "TP-Link Omada", short: "Omada", percent: 90, color: "stroke-cyan-600" }
+      { name: "TP-Link Omada", short: "Omada", percent: 90, color: "stroke-blue-600" }
     ];
   }, []);
 
