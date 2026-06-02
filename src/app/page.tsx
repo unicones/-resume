@@ -212,7 +212,7 @@ const mockProfile: { [key: string]: any } = {
   zh: {
     name: "巴迪瓦 (Patiwat Meekaeo)",
     title: "IT 部门经理 & 基础设施 (IT Manager & Infrastructure)",
-    bio: "拥有超过 9 年经验 of IT 基础设施管理专家，擅长设计与部署企业级网络系统（网络基础设施、活动目录、Windows Server）、备份与灾难恢复（使用 Veeam 和 NAS）以及网络监控系统。精通 Microsoft 365 云环境（电子邮件、SharePoint）管理、防火墙安全防护（如 Fortigate、Sophos）以及以管理员身份（Administrator）运维 ERP 系统（Mango ERP、Oracle ERP）。此外，具备使用 Python、SQL、JavaScript 和 PHP 开发企业自研 Web 应用程序及数据库管理的能力，以提升组织效率并实现 IT 成本优化。\n目前担任 S.MEC Engineering 的代理 IT 部门经理（Acting IT Manager & Infrastructure），负责管理服务于 160 多名员工的端到端 IT 运营，技能范围涵盖核心网络架构、系统化软件开发以及数据管理。",
+    bio: "拥有超过 9 年经验的 IT 基础设施管理专家，擅长设计与部署企业级网络系统（网络基础设施、活动目录、Windows Server）、备份与灾难恢复（使用 Veeam 和 NAS）以及网络监控系统。精通 Microsoft 365 云环境（电子邮件、SharePoint）管理、防火墙安全防护（如 Fortigate、Sophos）以及以管理员身份（Administrator）运维 ERP 系统（Mango ERP、Oracle ERP）。此外，具备使用 Python、SQL、JavaScript 和 PHP 开发企业自研 Web 应用程序及数据库管理的能力，以提升组织效率并实现 IT 成本优化。\n目前担任 S.MEC Engineering 的代理 IT 部门经理（Acting IT Manager & Infrastructure），负责管理服务于 160 多名员工的端到端 IT 运营，技能范围涵盖核心网络架构、系统化软件开发以及数据管理。",
     email: "patiwatmeekaeo@gmail.com",
     phone: "081-601-9666",
     address: "曼谷, 泰国",
@@ -800,7 +800,7 @@ const mockExperiences: { [key: string]: any[] } = {
       end_date: "2021年10月",
       responsibilities: [
         "1. 服务器管理",
-        "  • 通过活动目录（Active Directory）管理用户账户 and 访问权限",
+        "  • 通过活动目录（Active Directory）管理用户账户和访问权限",
         "  • 使用组策略（GPO）配置安全策略",
         "  • 管理文件共享并根据角色定义文件夹访问权限",
         "2. 云系统与网络安全",
