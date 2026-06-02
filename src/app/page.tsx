@@ -87,7 +87,8 @@ const uiTranslations: { [key: string]: any } = {
     email: "อีเมล",
     phone: "เบอร์โทรศัพท์",
     location: "ที่อยู่",
-    birthdate: "วันเกิด"
+    birthdate: "วันเกิด",
+    downloadCv: "ดาวน์โหลด PDF / พิมพ์"
   },
   en: {
     profile: "Profile",
@@ -133,7 +134,8 @@ const uiTranslations: { [key: string]: any } = {
     email: "Email Address",
     phone: "Phone Number",
     location: "Location",
-    birthdate: "Birth Date"
+    birthdate: "Birth Date",
+    downloadCv: "Download PDF / Print"
   },
   zh: {
     profile: "个人简介",
@@ -179,7 +181,8 @@ const uiTranslations: { [key: string]: any } = {
     email: "电子邮箱",
     phone: "联系电话",
     location: "所在地",
-    birthdate: "出生日期"
+    birthdate: "出生日期",
+    downloadCv: "下载 PDF / 打印"
   }
 };
 
@@ -1464,6 +1467,16 @@ export default function Home() {
             >
               {uiTranslations[language].getInTouch}
             </button>
+
+            {/* Download PDF button */}
+            <a
+              href={`/print?lang=${language}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full py-2.5 rounded-full font-heading text-xs font-black uppercase bg-slate-100 hover:bg-slate-200 text-slate-800 border border-slate-200 shadow-sm hover:shadow-md transition-all hover:scale-102 duration-300 text-center block"
+            >
+              {uiTranslations[language].downloadCv || "Download PDF"}
+            </a>
 
             {/* Social Icons row */}
             <div className="flex gap-4 pt-1.5">
