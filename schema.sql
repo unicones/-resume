@@ -302,7 +302,7 @@ VALUES
 INSERT INTO public.skills (category, name, proficiency, order_index)
 VALUES
 ('IT Infrastructure (หลัก)', 'Fortigate / Sophos / Zyxel', 'Advanced', 1),
-('IT Infrastructure (หลัก)', 'Cisco / Aruba / HP Switch', 'Advanced', 2),
+('IT Infrastructure (หลัก)', 'Switch L3,L2 Cisco / Aruba / HP Switch', 'Advanced', 2),
 ('IT Infrastructure (หลัก)', 'TP-Link Omada', 'Advanced', 3),
 ('IT Infrastructure (หลัก)', 'Active Directory / GPO', 'Advanced', 4),
 ('IT Infrastructure (หลัก)', 'Microsoft 365 SharePoint', 'Advanced', 5),

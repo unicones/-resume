@@ -874,7 +874,7 @@ const mockExperiences: { [key: string]: any[] } = {
 const mockSkills: { [key: string]: any[] } = {
   th: [
     { category: "IT Infrastructure (หลัก)", name: "Fortigate / Sophos / Zyxel", proficiency: "Advanced" },
-    { category: "IT Infrastructure (หลัก)", name: "Cisco / Aruba / HP Switch", proficiency: "Advanced" },
+    { category: "IT Infrastructure (หลัก)", name: "Switch L3,L2 Cisco / Aruba / HP Switch", proficiency: "Advanced" },
     { category: "IT Infrastructure (หลัก)", name: "TP-Link Omada", proficiency: "Advanced" },
     { category: "IT Infrastructure (หลัก)", name: "Active Directory / GPO", proficiency: "Advanced" },
     { category: "IT Infrastructure (หลัก)", name: "Microsoft 365 SharePoint", proficiency: "Advanced" },
@@ -890,7 +890,7 @@ const mockSkills: { [key: string]: any[] } = {
   ],
   en: [
     { category: "IT Infrastructure (Primary)", name: "Fortigate / Sophos / Zyxel", proficiency: "Advanced" },
-    { category: "IT Infrastructure (Primary)", name: "Cisco / Aruba / HP Switch", proficiency: "Advanced" },
+    { category: "IT Infrastructure (Primary)", name: "Switch L3,L2 Cisco / Aruba / HP Switch", proficiency: "Advanced" },
     { category: "IT Infrastructure (Primary)", name: "TP-Link Omada", proficiency: "Advanced" },
     { category: "IT Infrastructure (Primary)", name: "Active Directory / GPO", proficiency: "Advanced" },
     { category: "IT Infrastructure (Primary)", name: "Microsoft 365 SharePoint", proficiency: "Advanced" },
@@ -906,7 +906,7 @@ const mockSkills: { [key: string]: any[] } = {
   ],
   zh: [
     { category: "IT 基础设施 (核心)", name: "Fortigate / Sophos / Zyxel 防火墙", proficiency: "精通 (Advanced)" },
-    { category: "IT 基础设施 (核心)", name: "Cisco / Aruba / HP 交换机", proficiency: "精通 (Advanced)" },
+    { category: "IT 基础设施 (核心)", name: "Switch L3,L2 Cisco / Aruba / HP 交换机", proficiency: "精通 (Advanced)" },
     { category: "IT 基础设施 (核心)", name: "TP-Link Omada 智能网络", proficiency: "精通 (Advanced)" },
     { category: "IT 基础设施 (核心)", name: "活动目录 (Active Directory) / 组策略 (GPO)", proficiency: "精通 (Advanced)" },
     { category: "IT 基础设施 (核心)", name: "Microsoft 365 SharePoint 办公套件", proficiency: "精通 (Advanced)" },
@@ -1337,7 +1337,7 @@ export default function Home() {
   const circularSkills = useMemo(() => {
     return [
       { name: "Fortigate / Sophos / Zyxel", short: "FW", percent: 90, color: "stroke-[#dc2626]" },
-      { name: "Cisco / Aruba / HP Switch", short: "SW", percent: 90, color: "stroke-[#2563eb]" },
+      { name: "Switch L3,L2 Cisco / Aruba / HP Switch", short: "SW", percent: 90, color: "stroke-[#2563eb]" },
       { name: "TP-Link Omada", short: "Omada", percent: 90, color: "stroke-[#0284c7]" },
       { name: "Active Directory / GPO", short: "AD", percent: 90, color: "stroke-[#2563eb]" },
       { name: "Microsoft 365 SharePoint", short: "SP", percent: 90, color: "stroke-[#0284c7]" },
