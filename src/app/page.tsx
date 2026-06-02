@@ -967,34 +967,34 @@ const mockCertifications: { [key: string]: any[] } = {
 const getSkillDetailIcon = (name: string) => {
   const n = name.toLowerCase();
   if (n.includes("fortigate") || n.includes("sophos") || n.includes("zyxel") || n.includes("firewall") || n.includes("security") || n.includes("安全")) {
-    return <Shield className="w-4 h-4 text-rose-500 shrink-0" />;
+    return <Shield className="w-4 h-4 text-purple-600 shrink-0" />;
   }
   if (n.includes("lan / wan") || n.includes("tcp/ip") || n.includes("networking") || n.includes("网络")) {
-    return <Network className="w-4 h-4 text-blue-500 shrink-0" />;
+    return <Network className="w-4 h-4 text-blue-600 shrink-0" />;
   }
   if (n.includes("cisco") || n.includes("aruba") || n.includes("hp") || n.includes("switch") || n.includes("router") || n.includes("nutanix") || n.includes("esxi") || n.includes("vmware") || n.includes("hyper-v") || n.includes("路由器") || n.includes("交换机") || n.includes("虚拟化")) {
-    return <Server className="w-4 h-4 text-indigo-500 shrink-0" />;
+    return <Server className="w-4 h-4 text-blue-600 shrink-0" />;
   }
   if (n.includes("omada") || n.includes("wifi") || n.includes("控制器")) {
-    return <Wifi className="w-4 h-4 text-cyan-500 shrink-0" />;
+    return <Wifi className="w-4 h-4 text-sky-600 shrink-0" />;
   }
   if (n.includes("active directory") || n.includes("gpo") || n.includes("entra") || n.includes("活动目录") || n.includes("组策略")) {
     return <Users className="w-4 h-4 text-blue-600 shrink-0" />;
   }
   if (n.includes("azure") || n.includes("cloud") || n.includes("365") || n.includes("云")) {
-    return <Cloud className="w-4 h-4 text-sky-500 shrink-0" />;
+    return <Cloud className="w-4 h-4 text-sky-600 shrink-0" />;
   }
   if (n.includes("nas") || n.includes("backup") || n.includes("备份") || n.includes("灾备")) {
-    return <HardDrive className="w-4 h-4 text-amber-600 shrink-0" />;
+    return <HardDrive className="w-4 h-4 text-slate-600 shrink-0" />;
   }
   if (n.includes("supabase") || n.includes("postgresql") || n.includes("sql") || n.includes("数据库")) {
-    return <Database className="w-4 h-4 text-purple-650 shrink-0" />;
+    return <Database className="w-4 h-4 text-purple-600 shrink-0" />;
   }
   if (n.includes("next.js") || n.includes("react") || n.includes("javascript") || n.includes("php") || n.includes("typescript") || n.includes("html") || n.includes("css") || n.includes("原生") || n.includes("开发")) {
     return <Code2 className="w-4 h-4 text-sky-600 shrink-0" />;
   }
   if (n.includes("script") || n.includes("python") || n.includes("api") || n.includes("编程")) {
-    return <Terminal className="w-4 h-4 text-amber-500 shrink-0" />;
+    return <Terminal className="w-4 h-4 text-slate-600 shrink-0" />;
   }
   if (n.includes("phone") || n.includes("电话")) {
     return <Phone className="w-4 h-4 text-slate-500 shrink-0" />;
@@ -1006,7 +1006,7 @@ const getSkillDetailIcon = (name: string) => {
     return <Fingerprint className="w-4 h-4 text-slate-600 shrink-0" />;
   }
   if (n.includes("thai") || n.includes("lao") || n.includes("khmer") || n.includes("english") || n.includes("languages") || n.includes("泰语") || n.includes("英语") || n.includes("语言能力")) {
-    return <Languages className="w-4 h-4 text-emerald-600 shrink-0" />;
+    return <Languages className="w-4 h-4 text-slate-600 shrink-0" />;
   }
   return <Cpu className="w-4 h-4 text-slate-400 shrink-0" />;
 };
@@ -1059,57 +1059,57 @@ const getAccomplishmentMeta = (index: number) => {
     case 0:
       return {
         icon: <TrendingDown {...iconProps} />,
-        bgClass: "bg-emerald-500/10 text-emerald-650 dark:text-emerald-400 border border-emerald-500/20"
+        bgClass: "bg-blue-50 text-blue-600 border border-blue-100"
       };
     case 1:
       return {
         icon: <FileCode {...iconProps} />,
-        bgClass: "bg-blue-500/10 text-blue-650 dark:text-blue-400 border border-blue-500/20"
+        bgClass: "bg-sky-50 text-sky-600 border border-sky-100"
       };
     case 2:
       return {
         icon: <Server {...iconProps} />,
-        bgClass: "bg-indigo-500/10 text-indigo-650 dark:text-indigo-400 border border-indigo-500/20"
+        bgClass: "bg-purple-50 text-purple-600 border border-purple-100"
       };
     case 3:
       return {
         icon: <Cloud {...iconProps} />,
-        bgClass: "bg-sky-500/10 text-sky-650 dark:text-sky-400 border border-sky-500/20"
+        bgClass: "bg-slate-50 text-slate-600 border border-slate-200"
       };
     case 4:
       return {
         icon: <Users {...iconProps} />,
-        bgClass: "bg-violet-500/10 text-violet-650 dark:text-violet-400 border border-violet-500/20"
+        bgClass: "bg-blue-50 text-blue-600 border border-blue-100"
       };
     case 5:
       return {
         icon: <Shield {...iconProps} />,
-        bgClass: "bg-teal-500/10 text-teal-650 dark:text-teal-400 border border-teal-500/20"
+        bgClass: "bg-sky-50 text-sky-600 border border-sky-100"
       };
     case 6:
       return {
         icon: <Network {...iconProps} />,
-        bgClass: "bg-cyan-500/10 text-cyan-650 dark:text-cyan-400 border border-cyan-500/20"
+        bgClass: "bg-purple-50 text-purple-600 border border-purple-100"
       };
     case 7:
       return {
         icon: <Activity {...iconProps} />,
-        bgClass: "bg-orange-500/10 text-orange-650 dark:text-orange-400 border border-orange-500/20"
+        bgClass: "bg-slate-50 text-slate-600 border border-slate-200"
       };
     case 8:
       return {
         icon: <Code2 {...iconProps} />,
-        bgClass: "bg-rose-500/10 text-rose-650 dark:text-rose-400 border border-rose-500/20"
+        bgClass: "bg-blue-50 text-blue-600 border border-blue-100"
       };
     case 9:
       return {
         icon: <Phone {...iconProps} />,
-        bgClass: "bg-amber-500/10 text-amber-650 dark:text-amber-400 border border-amber-500/20"
+        bgClass: "bg-sky-50 text-sky-600 border border-sky-100"
       };
     default:
       return {
         icon: <Check {...iconProps} />,
-        bgClass: "bg-emerald-500/10 text-emerald-650 dark:text-emerald-400 border border-emerald-500/20"
+        bgClass: "bg-slate-50 text-slate-600 border border-slate-200"
       };
   }
 };
@@ -1376,7 +1376,7 @@ export default function Home() {
             onClick={() => setLanguage(lang.code as any)}
             className={`px-3 py-1.5 rounded-full text-xs font-black transition-all cursor-pointer ${
               language === lang.code
-                ? "bg-gradient-to-r from-blue-600 to-indigo-600 text-white shadow-sm"
+                ? "bg-blue-600 text-white shadow-sm"
                 : "text-slate-600 hover:text-slate-900 hover:bg-slate-100"
             }`}
           >
@@ -1429,7 +1429,7 @@ export default function Home() {
             
             {/* Profile circular avatar with thick neon border */}
             <div className="relative">
-              <div className="w-24 h-24 rounded-full p-1 bg-gradient-to-tr from-blue-500 via-indigo-500 to-purple-500 shadow-sm">
+              <div className="w-24 h-24 rounded-full p-1 bg-blue-600 shadow-sm">
                 <div className="w-full h-full rounded-full bg-white p-1">
                   <div className="w-full h-full rounded-full overflow-hidden relative">
                     <Image
@@ -1459,7 +1459,7 @@ export default function Home() {
             {/* Get in touch button pill */}
             <button
               onClick={() => setActiveTab("contact")}
-              className="w-full py-2.5 rounded-full font-heading text-xs font-black uppercase bg-gradient-to-r from-blue-600 via-indigo-600 to-indigo-700 text-white shadow-sm hover:shadow-md transition-all hover:scale-102 duration-300"
+              className="w-full py-2.5 rounded-full font-heading text-xs font-black uppercase bg-blue-600 hover:bg-blue-700 text-white shadow-sm hover:shadow-md transition-all hover:scale-102 duration-300"
             >
               {uiTranslations[language].getInTouch}
             </button>
@@ -1618,10 +1618,10 @@ export default function Home() {
                       const getSkillIcon = (shortName: string) => {
                         switch (shortName) {
                           case "JS":
-                            return <span className="text-yellow-600 font-extrabold text-xs tracking-tight">JS</span>;
+                            return <span className="text-slate-800 font-extrabold text-xs tracking-tight">JS</span>;
                           case "React":
                             return (
-                              <svg className="w-6.5 h-6.5 text-sky-505 animate-spin-slow" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
+                              <svg className="w-6.5 h-6.5 text-sky-600 animate-spin-slow" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
                                 <ellipse cx="12" cy="12" rx="10.5" ry="4" transform="rotate(30 12 12)" />
                                 <ellipse cx="12" cy="12" rx="10.5" ry="4" transform="rotate(90 12 12)" />
                                 <ellipse cx="12" cy="12" rx="10.5" ry="4" transform="rotate(150 12 12)" />
@@ -1629,18 +1629,18 @@ export default function Home() {
                               </svg>
                             );
                           case "Node.js":
-                            return <span className="text-green-600 font-black text-[9px] tracking-tighter">NODE</span>;
+                            return <span className="text-slate-800 font-black text-[9px] tracking-tighter">NODE</span>;
                           case "Python":
                             return (
-                              <svg className="w-5.5 h-5.5 text-amber-600" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M12 2c-.6 0-1.1.1-1.5.3L6.3 4.6c-.8.4-1.3 1.2-1.3 2v4.8h6.4V12.4H5v1.2c0 .8.5 1.6 1.3 2l4.2 2.3c.4.2.9.3 1.5.3.6 0 1.1-.1 1.5-.3l4.2-2.3c.8-.4 1.3-1.2 1.3-2v-4.8H12.6V8.6H19V7.4c0-.8-.5-1.6-1.3-2l-4.2-2.3C13.1 2.1 12.6 2 12 2z" fill="#d97706" />
+                              <svg className="w-5.5 h-5.5 text-slate-600" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2c-.6 0-1.1.1-1.5.3L6.3 4.6c-.8.4-1.3 1.2-1.3 2v4.8h6.4V12.4H5v1.2c0 .8.5 1.6 1.3 2l4.2 2.3c.4.2.9.3 1.5.3.6 0 1.1-.1 1.5-.3l4.2-2.3c.8-.4 1.3-1.2 1.3-2v-4.8H12.6V8.6H19V7.4c0-.8-.5-1.6-1.3-2l-4.2-2.3C13.1 2.1 12.6 2 12 2z" fill="currentColor" />
                               </svg>
                             );
                           case "AWS":
-                            return <span className="text-orange-500 font-extrabold text-[10px] tracking-tighter uppercase">aws</span>;
+                            return <span className="text-slate-850 font-extrabold text-[10px] tracking-tighter uppercase">aws</span>;
                           case "SQL":
                             return (
-                              <svg className="w-5 h-5 text-purple-650" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
+                              <svg className="w-5 h-5 text-purple-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
                                 <ellipse cx="12" cy="5" rx="7" ry="2.2" />
                                 <path d="M5 5v5c0 1.2 3.1 2.2 7 2.2s7-1 7-2.2V5" />
                                 <path d="M5 10v5c0 1.2 3.1 2.2 7 2.2s7-1 7-2.2v-5" />
@@ -1648,7 +1648,7 @@ export default function Home() {
                             );
                           case "FW":
                             return (
-                              <svg className="w-5 h-5 text-rose-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
+                              <svg className="w-5 h-5 text-purple-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
                                 <rect x="3" y="3" width="18" height="18" rx="2" />
                                 <path d="M3 9h18M3 15h18M9 3v6M15 3v6M6 9v6M12 9v6M18 9v6" />
                               </svg>
@@ -1664,7 +1664,7 @@ export default function Home() {
                             );
                           case "Omada":
                             return (
-                              <svg className="w-5 h-5 text-cyan-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
+                              <svg className="w-5 h-5 text-sky-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
                                 <circle cx="12" cy="18" r="1" fill="currentColor" />
                                 <path d="M5 12a10 10 0 0 1 14 0" />
                                 <path d="M8.5 15.5a5 5 0 0 1 7 0" />
@@ -2209,7 +2209,7 @@ export default function Home() {
 
                         <button
                           type="submit"
-                          className="w-full py-3 rounded-xl font-heading text-xs font-black uppercase bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white shadow-sm transition-all flex items-center justify-center gap-2 cursor-pointer"
+                          className="w-full py-3 rounded-xl font-heading text-xs font-black uppercase bg-blue-600 hover:bg-blue-700 text-white shadow-sm transition-all flex items-center justify-center gap-2 cursor-pointer"
                         >
                           <Send className="w-4 h-4" />
                           <span>{uiTranslations[language].sendMessageBtn}</span>
