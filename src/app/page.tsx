@@ -1958,8 +1958,8 @@ export default function Home() {
                             badgeBgClass = "bg-blue-50/60 text-blue-700 dark:bg-blue-950/40 dark:text-blue-400 border-blue-100/50 dark:border-blue-900/30";
                           } else if (prof.includes("beginner") || prof.includes("初级")) {
                             percent = 40;
-                            barColorClass = "from-amber-500 to-orange-500";
-                            badgeBgClass = "bg-amber-50/60 text-amber-700 dark:bg-amber-950/40 dark:text-amber-400 border-amber-100/50 dark:border-amber-900/30";
+                            barColorClass = "from-slate-400 to-slate-500";
+                            badgeBgClass = "bg-slate-50/60 text-slate-600 dark:bg-slate-950/40 dark:text-slate-400 border-slate-200/50 dark:border-slate-900/30";
                           }
 
                           return (
