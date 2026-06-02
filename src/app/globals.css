@@ -146,15 +146,17 @@ h1, h2, h3, h4, h5, h6, .font-heading {
   transform: translateY(-4px) scale(1.1);
 }
 
-/* High contrast borders and shadow styling for accomplishment cards */
-.neon-card .border-slate-100\/70 {
+/* High contrast borders and shadow styling for accomplishment and project cards */
+.neon-card .border-slate-100\/70,
+.neon-card .border-slate-100 {
   border: 1.5px solid #cbd5e1 !important; /* slate-300 */
   background-color: #ffffff !important;
   box-shadow: 0 1px 3px rgba(15, 23, 42, 0.05) !important;
   transition: all 0.3s ease !important;
 }
 
-.neon-card .border-slate-100\/70:hover {
+.neon-card .border-slate-100\/70:hover,
+.neon-card .border-slate-100:hover {
   border-color: #94a3b8 !important; /* slate-400 */
   background-color: #f8fafc !important;
   box-shadow: 0 4px 12px rgba(15, 23, 42, 0.08) !important;
