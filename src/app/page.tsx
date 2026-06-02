@@ -1773,7 +1773,7 @@ export default function Home() {
                                   </span>
                                 ))}
                               </div>
-                              {p.link && (
+                              {p.link && p.link !== "#" && (
                                 <a
                                   href={p.link}
                                   className="inline-flex items-center gap-1 text-[12px] font-black text-blue-600 dark:text-blue-400 uppercase tracking-widest hover:text-blue-800 dark:hover:text-blue-300 transition-colors"
