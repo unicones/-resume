@@ -1336,15 +1336,15 @@ export default function Home() {
   // Interactive circle progress values matching mockup layout style
   const circularSkills = useMemo(() => {
     return [
-      { name: "JavaScript", short: "JS", percent: 85, color: "stroke-blue-600" },
-      { name: "React", short: "React", percent: 80, color: "stroke-blue-600" },
-      { name: "Node.js", short: "Node.js", percent: 75, color: "stroke-blue-600" },
-      { name: "Python", short: "Python", percent: 70, color: "stroke-blue-600" },
-      { name: "AWS", short: "AWS", percent: 80, color: "stroke-blue-600" },
-      { name: "SQL DB", short: "SQL", percent: 85, color: "stroke-blue-600" },
-      { name: "Fortigate FW", short: "FW", percent: 90, color: "stroke-blue-600" },
-      { name: "Active Directory", short: "AD", percent: 90, color: "stroke-blue-600" },
-      { name: "TP-Link Omada", short: "Omada", percent: 90, color: "stroke-blue-600" }
+      { name: "JavaScript", short: "JS", percent: 85, color: "stroke-[#ca8a04]" },
+      { name: "React", short: "React", percent: 80, color: "stroke-[#0284c7]" },
+      { name: "Node.js", short: "Node.js", percent: 75, color: "stroke-[#16a34a]" },
+      { name: "Python", short: "Python", percent: 70, color: "stroke-[#2563eb]" },
+      { name: "AWS", short: "AWS", percent: 80, color: "stroke-[#ea580c]" },
+      { name: "SQL DB", short: "SQL", percent: 85, color: "stroke-[#475569]" },
+      { name: "Fortigate FW", short: "FW", percent: 90, color: "stroke-[#dc2626]" },
+      { name: "Active Directory", short: "AD", percent: 90, color: "stroke-[#2563eb]" },
+      { name: "TP-Link Omada", short: "Omada", percent: 90, color: "stroke-[#0284c7]" }
     ];
   }, []);
 
@@ -1618,10 +1618,10 @@ export default function Home() {
                       const getSkillIcon = (shortName: string) => {
                         switch (shortName) {
                           case "JS":
-                            return <span className="text-slate-800 font-extrabold text-xs tracking-tight">JS</span>;
+                            return <span className="text-[#ca8a04] font-extrabold text-xs tracking-tight">JS</span>;
                           case "React":
                             return (
-                              <svg className="w-6.5 h-6.5 text-sky-600 animate-spin-slow" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
+                              <svg className="w-6.5 h-6.5 text-[#0284c7] animate-spin-slow" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
                                 <ellipse cx="12" cy="12" rx="10.5" ry="4" transform="rotate(30 12 12)" />
                                 <ellipse cx="12" cy="12" rx="10.5" ry="4" transform="rotate(90 12 12)" />
                                 <ellipse cx="12" cy="12" rx="10.5" ry="4" transform="rotate(150 12 12)" />
@@ -1629,18 +1629,18 @@ export default function Home() {
                               </svg>
                             );
                           case "Node.js":
-                            return <span className="text-slate-800 font-black text-[9px] tracking-tighter">NODE</span>;
+                            return <span className="text-[#16a34a] font-black text-[9px] tracking-tighter">NODE</span>;
                           case "Python":
                             return (
-                              <svg className="w-5.5 h-5.5 text-slate-600" viewBox="0 0 24 24" fill="currentColor">
+                              <svg className="w-5.5 h-5.5 text-[#2563eb]" viewBox="0 0 24 24" fill="currentColor">
                                 <path d="M12 2c-.6 0-1.1.1-1.5.3L6.3 4.6c-.8.4-1.3 1.2-1.3 2v4.8h6.4V12.4H5v1.2c0 .8.5 1.6 1.3 2l4.2 2.3c.4.2.9.3 1.5.3.6 0 1.1-.1 1.5-.3l4.2-2.3c.8-.4 1.3-1.2 1.3-2v-4.8H12.6V8.6H19V7.4c0-.8-.5-1.6-1.3-2l-4.2-2.3C13.1 2.1 12.6 2 12 2z" fill="currentColor" />
                               </svg>
                             );
                           case "AWS":
-                            return <span className="text-slate-850 font-extrabold text-[10px] tracking-tighter uppercase">aws</span>;
+                            return <span className="text-[#ea580c] font-extrabold text-[10px] tracking-tighter uppercase">AWS</span>;
                           case "SQL":
                             return (
-                              <svg className="w-5 h-5 text-purple-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
+                              <svg className="w-5 h-5 text-[#475569]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
                                 <ellipse cx="12" cy="5" rx="7" ry="2.2" />
                                 <path d="M5 5v5c0 1.2 3.1 2.2 7 2.2s7-1 7-2.2V5" />
                                 <path d="M5 10v5c0 1.2 3.1 2.2 7 2.2s7-1 7-2.2v-5" />
@@ -1648,14 +1648,14 @@ export default function Home() {
                             );
                           case "FW":
                             return (
-                              <svg className="w-5 h-5 text-purple-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
+                              <svg className="w-5 h-5 text-[#dc2626]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
                                 <rect x="3" y="3" width="18" height="18" rx="2" />
                                 <path d="M3 9h18M3 15h18M9 3v6M15 3v6M6 9v6M12 9v6M18 9v6" />
                               </svg>
                             );
                           case "AD":
                             return (
-                              <svg className="w-5 h-5 text-blue-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
+                              <svg className="w-5 h-5 text-[#2563eb]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
                                 <rect x="9" y="2" width="6" height="5" rx="1" />
                                 <rect x="2" y="17" width="6" height="5" rx="1" />
                                 <rect x="16" y="17" width="6" height="5" rx="1" />
@@ -1664,7 +1664,7 @@ export default function Home() {
                             );
                           case "Omada":
                             return (
-                              <svg className="w-5 h-5 text-sky-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
+                              <svg className="w-5 h-5 text-[#0284c7]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
                                 <circle cx="12" cy="18" r="1" fill="currentColor" />
                                 <path d="M5 12a10 10 0 0 1 14 0" />
                                 <path d="M8.5 15.5a5 5 0 0 1 7 0" />
@@ -1685,7 +1685,7 @@ export default function Home() {
                                 cx="40"
                                 cy="40"
                                 r={radius}
-                                className="stroke-slate-100 fill-none"
+                                className="stroke-[#e2e8f0] fill-[#f8fafc]"
                                 strokeWidth="4"
                                 transform="rotate(-90 40 40)"
                               />
@@ -1706,7 +1706,7 @@ export default function Home() {
                             </div>
                           </div>
 
-                          <span className="text-[12px] font-bold text-slate-500 group-hover:text-slate-800 transition-colors mt-1.5 text-center leading-tight">
+                          <span className="text-[12px] font-bold text-[#475569] group-hover:text-slate-800 transition-colors mt-1.5 text-center leading-tight">
                             {s.name === "Active Directory" ? "Active Directory" : s.name.split(" ")[0]}
                           </span>
                         </div>
