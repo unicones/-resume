@@ -1832,8 +1832,8 @@ export default function Home() {
 
                         {/* Responsibilities list */}
                         {exp.responsibilities && exp.responsibilities.length > 0 && (
-                          <div className="space-y-1.5 text-xs text-slate-650 leading-relaxed font-medium">
-                            <h5 className="text-[9px] font-black text-slate-500 uppercase tracking-widest border-b border-slate-200 pb-1">
+                          <div className="space-y-1.5 text-sm text-slate-650 leading-relaxed font-medium">
+                            <h5 className="text-[11px] font-black text-slate-500 uppercase tracking-widest border-b border-slate-200 pb-1">
                               {uiTranslations[language].responsibilities}
                             </h5>
                             <ul className="list-disc list-outside pl-4 space-y-1">
