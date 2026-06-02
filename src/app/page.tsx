@@ -187,7 +187,7 @@ const uiTranslations: { [key: string]: any } = {
 const mockProfile: { [key: string]: any } = {
   th: {
     name: "ปฏิวัติ มีแก้ว (Patiwat Meekaeo)",
-    title: "ผู้จัดการฝ่ายไอที (IT Manager & Full-stack Developer)",
+    title: "ผู้จัดการแผนกไอที (IT Manager & Infrastructure)",
     bio: "นักบริหารระบบ IT ที่มีประสบการณ์กว่า 9 ปี ครอบคลุมงานด้าน Network Infrastructure, Server, Security และ Cloud ปัจจุบันดำรงตำแหน่ง IT Manager (Acting) ที่ S.MEC Engineering ดูแลระบบ IT ให้พนักงานกว่า 160 คน และบริหารโครงสร้างพื้นฐาน IT ครบวงจรตั้งแต่ศูนย์\nมีความเชี่ยวชาญด้าน Firewall (Fortigate, Sophos), Network (Cisco, Aruba, TP-Link Omada), Microsoft 365, Active Directory และการพัฒนาเว็บแอปพลิเคชันภายในองค์กร นอกจากนี้ยังมีประสบการณ์ด้านการออกแบบ ติดตั้ง และ Config ระบบ Network ให้ลูกค้าองค์กรจากการทำงานที่ ITK Connecting",
     email: "patiwatmeekaeo@gmail.com",
     phone: "081-601-9666",
@@ -199,7 +199,7 @@ const mockProfile: { [key: string]: any } = {
   },
   en: {
     name: "Patiwat Meekaeo",
-    title: "IT Manager & Full-stack Developer",
+    title: "IT Manager & Infrastructure",
     bio: "IT professional with over 9 years of experience spanning Network Infrastructure, Servers, Security, and Cloud systems. Currently serving as Acting IT Manager at S.MEC Engineering, managing IT systems for over 160 employees and administering end-to-end IT infrastructure from the ground up.\nExpertise includes firewalls (Fortigate, Sophos), networking (Cisco, Aruba, TP-Link Omada), Microsoft 365, Active Directory, and in-house web application development. Additionally, possesses experience in designing, installing, and configuring network systems for enterprise clients from previous work at ITK Connecting.",
     email: "patiwatmeekaeo@gmail.com",
     phone: "081-601-9666",
@@ -211,7 +211,7 @@ const mockProfile: { [key: string]: any } = {
   },
   zh: {
     name: "巴迪瓦 (Patiwat Meekaeo)",
-    title: "IT 部门经理 & 全栈开发工程师",
+    title: "IT 部门经理 & 基础设施 (IT Manager & Infrastructure)",
     bio: "拥有超过 9 年 IT 系统与网络管理经验的专业人员，业务范围涵盖网络基础设施、服务器、网络安全及云计算系统。目前担任 S.MEC Engineering 的代理 IT 部门经理，负责管理公司服务于 160 多名员工的 IT 系统，并从零开始部署和管理端到端的 IT 基础设施。\n专业知识包括防火墙（Fortigate、Sophos）、网络设备（Cisco、Aruba、TP-Link Omada）、Microsoft 365、活动目录（Active Directory）及企业自研 Web 应用开发。此外，还拥有在 ITK Connecting 工作期间积累的面向企业客户的网络系统设计、安装与配置经验。",
     email: "patiwatmeekaeo@gmail.com",
     phone: "081-601-9666",
@@ -1411,8 +1411,8 @@ export default function Home() {
               <h3 className="font-black text-xl tracking-[0.1em] text-slate-800 font-heading uppercase">
                 {currentProfile.name ? currentProfile.name.split(" ")[0] : "PATIWAT"}
               </h3>
-              <p className="text-[11px] text-slate-500 font-semibold mt-1.5 font-heading">
-                {currentProfile.title || "IT Manager & Full-stack Developer"}
+              <p className="text-[12px] text-slate-500 font-semibold mt-1.5 font-heading">
+                {currentProfile.title || "IT Manager & Infrastructure"}
               </p>
             </div>
 

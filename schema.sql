@@ -94,7 +94,7 @@ CREATE POLICY "Allow authenticated users to manage certifications" ON public.cer
 INSERT INTO public.profiles (name, title, bio, email, phone, line_id, address, birthdate)
 VALUES (
     'ปฏิวัติ มีแก้ว (Patiwat Meekaeo)',
-    'ผู้จัดการฝ่ายไอที (IT Manager & Full-stack Developer)',
+    'ผู้จัดการแผนกไอที (IT Manager & Infrastructure)',
     'ผู้เชี่ยวชาญด้านระบบโครงสร้างพื้นฐานไอที (IT Infrastructure & Network Engineer) ที่มีทักษะในการพัฒนาซอฟต์แวร์ (SQL, JavaScript, Python, PHP) ประสบการณ์กว่า 9 ปีในการบริหารจัดการระบบคอมพิวเตอร์และเครือข่ายในองค์กร ปัจจุบันดูแลระบบไอทีสำหรับผู้ใช้งานกว่า 160 คน ควบคุมดูแลระบบความปลอดภัยผ่าน Fortigate 100F และ Multi-WAN load-balancing มุ่งเน้นการใช้ทักษะทางโปรแกรมมิ่งเพื่อสร้าง In-House Web Applications ช่วยเพิ่มประสิทธิภาพการทำงานและลดต้นทุนด้านไอที (IT cost reduction) พร้อมเติบโตไปกับองค์กรอย่างมั่นคง',
     'patiwatmeekaeo@gmail.com',
     '081-601-9666',
