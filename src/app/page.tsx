@@ -1815,11 +1815,11 @@ export default function Home() {
                       {accomplishmentsList.map((ach: string, aIdx: number) => {
                         const meta = getAccomplishmentMeta(aIdx);
                         return (
-                          <div key={aIdx} className="p-3.5 rounded-xl border border-slate-100/70 dark:border-slate-800/40 bg-white/50 dark:bg-slate-900/30 hover:bg-white/80 dark:hover:bg-slate-900/60 hover:shadow-sm transition-all duration-300 flex items-start gap-3">
+                          <div key={aIdx} className="p-3.5 rounded-xl border border-slate-200 dark:border-slate-750 bg-white dark:bg-slate-900 hover:bg-slate-50 dark:hover:bg-slate-850 hover:border-slate-300 hover:shadow-md transition-all duration-300 flex items-start gap-3 shadow-sm">
                             <div className={`shrink-0 w-6 h-6 rounded-full flex items-center justify-center mt-0.5 ${meta.bgClass}`}>
                               {meta.icon}
                             </div>
-                            <span className="text-xs text-slate-700 dark:text-slate-400 font-semibold leading-relaxed">
+                            <span className="text-xs text-slate-700 dark:text-slate-300 font-semibold leading-relaxed">
                               {ach}
                             </span>
                           </div>
