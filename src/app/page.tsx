@@ -1138,15 +1138,15 @@ export default function Home() {
   const currentProjects = useMemo((): any[] => {
     let list: any[] = [];
     if (language === "th") {
-      if (Array.isArray(projects)) {
+      if (Array.isArray(projects) && projects.length > 0) {
         list = projects;
       } else {
-        list = projects.th || mockProjects.th || [];
+        list = (projects && projects.th) || mockProjects.th || [];
       }
     } else {
-      if (projects && projects[language]) {
+      if (projects && projects[language] && projects[language].length > 0) {
         list = projects[language];
-      } else if (Array.isArray(projects)) {
+      } else if (Array.isArray(projects) && projects.length > 0) {
         list = projects.map((p: any, idx: number) => {
           const titleKey = p.title?.toUpperCase();
           const titleToIndex: { [key: string]: number } = {
